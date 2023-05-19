@@ -28,12 +28,12 @@ nav ul li a {
   text-decoration: none;
 }
 
-section {
+.event1 {
   padding: 50px;
 }
 
-section img {
-  width: 300px;
+.event1 img {
+  width: 500px;
   height: 200px;
 }
 
