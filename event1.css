@@ -16,6 +16,8 @@
     margin: 2%;
     float: right;
     display:block;
+    border: #000;
+    border-style: solid;
 }
 
 body {
@@ -32,11 +34,18 @@ body {
     cursor: default;
     margin: 2%;
     margin-top: 2%;
-    height: 50px;
+    height: 45px;
     position: relative;
     align-items: center;
     font-size: large;
-    text-align: center;
+    text-align: left;
+}
+
+.header {
+    margin: 2%;
+    margin-top: 1%;
+    color: #737373;
+    font-size: 12px;
 }
 
 .information1 {
@@ -48,9 +57,28 @@ body {
     background-color: transparent;
     color: #000;
     font-size: 20px;
-    height: 450px;
+    height: 225px;
     width: 60%;
     display: flex;
+    border: #000;
+    border-style: solid;
+}
+
+.information10 {
+    float: left;
+    cursor: default;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    position: relative;
+    background-color: transparent;
+    color: #000;
+    font-size: 20px;
+    height: 225px;
+    width: 60%;
+    display: flex;
+    border: #000;
+    border-style: solid;
 }
 
 .information2 {
@@ -69,9 +97,12 @@ body {
     float: left;
     margin: 2%;
     display:block;
+    
 }
 
-
+p {
+    text-indent:50px;
+}
 .container {
     /*padding: 10px 10%;*/
     position: relative;
