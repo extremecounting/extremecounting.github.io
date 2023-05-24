@@ -16,8 +16,6 @@
     margin: 2%;
     float: right;
     display:block;
-    border: #000;
-    border-style: solid;
 }
 
 body {
@@ -60,8 +58,6 @@ body {
     height: 225px;
     width: 60%;
     display: flex;
-    border: #000;
-    border-style: solid;
 }
 
 .information10 {
@@ -77,8 +73,6 @@ body {
     height: 225px;
     width: 60%;
     display: flex;
-    border: #000;
-    border-style: solid;
 }
 
 .information2 {
