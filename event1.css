@@ -15,7 +15,9 @@
 .image1 {
     margin: 2%;
     float: right;
-    display:block;
+    display:flex;
+    border: #151F22;
+    border-style: solid;
 }
 
 body {
