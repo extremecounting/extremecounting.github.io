@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  overscroll-behavior: none;
+}
+main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4000px;
+  height: 100%;
+}
+.slider-inner {
+  position: absolute;
+  top: 35%;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.item {
+  
+  position: relative;
+  width: 375px;
+  height: 110%;
+  overflow: hidden;
+  
+} 
+.img {
+  position: relative;
+  left: -100px;
+  width: 600px;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.text-item {
+  text-align: center;
+  border: 5px;
+  margin-top: 2%;
+}
+
+.description {
+  color: rgb(92, 92, 92);
+  margin: auto;
+}
+
+.oitem {
+  position: relative;
+  width: 400px;
+  height: 100%;
+  overflow:hidden;
+  background-color: rgb(92, 92, 92);
+  display: flex;
+  justify-content: center;
+  border-radius: 3%;
+  
+  
+  
+}
+
+.oitem:hover {
+  transition: 1s;
+  background-color: rgb(175, 175, 175);
+  color: black;
+  height: 120%;
+  .item {height: 80%; }
+  .img {position: relative;}
+  .description {
+    color: black;
+    height: 20%;
+  }
+}
+/*
+@keyframes descriptionLoad {
+  0% {
+    .oitem {
+      position: relative;
+      width: 400px;
+      height: 100%;
+      overflow: hidden;
+      background-color: rgb(92, 92, 92);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 3%;
+      
+      color: rgb(200, 200, 200);
+    
+    }
+    .item { 
+      position: relative;
+      width: 375px;
+      height: 95%;
+      overflow: hidden;
+    }
+  }
+  100% {
+    .oitem {
+      background-color: rgb(175, 175, 175);
+      color: black;
+      height: 120%;
+      .item {height: 80%; }  
+    }
+    .item {
+      height: 80%;
+    }
+  }
+
+}
+
+
+/*
+background-color: rgb(175, 175, 175);
+  color: black;
+  height: 120%;
+  .item {height: 80%; }
+*/

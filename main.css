@@ -24,8 +24,6 @@
     cursor: auto;
 }
 
-
-
 .container:before {    
     --size: 0;
     content: '';
@@ -57,7 +55,6 @@ nav ul {
     margin: auto;
     height: 50%;
 }
-
 
 nav ul li {
     display: inline-block;
