@@ -37,18 +37,13 @@ a:visited {
 .menu-item {    
     display: flex;
     background-color: white;
-    transition: background-color 1s;
+    transition: background-color 650ms;
 }
 
 .menu-item:hover {
     background-color: #ededed;
 }
 
-
-@keyframes gradient {
-    0% {background-color: white;}
-    100% {background-color: black;}
-}
 
 .menu-item-image {
     border-radius: 1em !important;
@@ -136,10 +131,17 @@ nav {
     background-color: #c9c9c9;
     
 }
+nav ul span a {
+    border: white;
+    border-style: dashed;
+    
+}
 
 nav ul {
+    border-style: dashed;
     margin: auto;
     height: 50%;
+    align-content: center;
 }
 
 nav ul li {
