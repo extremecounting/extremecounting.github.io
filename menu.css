@@ -133,12 +133,10 @@ nav {
 }
 nav ul span a {
     border: white;
-    border-style: dashed;
     
 }
 
 nav ul {
-    border-style: dashed;
     margin: auto;
     height: 50%;
     align-content: center;
