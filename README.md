@@ -1,3 +1,4 @@
-# Vietnam Project
-Github site for American History Vietnam Project number 4.
-Made by Jacob Hatch
+# Web Design Project
+Github site for BPA Web Design Team
+
+Members are: Jacob Hatch, Alex Ossenheimer, Mailie Arbelius
