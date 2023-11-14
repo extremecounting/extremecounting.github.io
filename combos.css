@@ -1,8 +1,124 @@
 .container {
     max-width: 1200px;
-    margin: 0 auto;
     padding: 1.5em;
 }
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.combo {
+    margin-top: 1.5em;
+    font-family: 'Bitter', serif;
+    font-size: 14px;
+}
+
+.combo-heading {
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+}
+
+.combo-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+.combo-item {
+    margin: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    background-color: white;
+    transition: background-color 650ms;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+}
+
+.combo-item:hover {
+    background-color: #ededed;
+}
+
+
+.combo-item-image {
+    border-radius: 1em;
+    margin: 0.8em;
+    width: 75%;
+    height: inherit;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+}
+
+.combo-item-text {
+    flex-grow: 1;
+}
+
+.combo-item-heading {
+    text-align: center;
+    padding: 14%;
+    align-items: center;
+}
+
+.combo-item-name {
+    margin-right: 1.5em;
+}
+
+@media screen and (min-width: 900px) { 
+    .combo { 
+        font-size: 16px;
+    }
+    .combo-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .combo-item-image {
+        width: 125px;
+        height: 125px;
+    }
+}
+
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-color: #636363;
+}
+.container {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+
+.container:before {    
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease;
+}
+
+.container:hover:before {
+    --size: 200px;
+}   
 
 nav {
     height: 80px;
@@ -55,92 +171,11 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:visited {
-    color: inherit;
-    text-decoration: none;
-}
-
-.combo {
-    margin-top: 1.5em;
-    font-family: 'Bitter', serif;
-    font-size: 14px;
-}
-
-.combo-heading {
-    margin: 0;
-    padding-bottom: 1em;
-    border-bottom: 2px solid #ccc;
-}
-
-.combo-group {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5em;
-    padding: 1.5em 0;
-}
-
-.combo-item {
-    margin: 8%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    display: flex;
-    background-color: white;
-    transition: background-color 650ms;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 15px;
-}
-
-.combo-item:hover {
-    background-color: #ededed;
-}
-
-@media screen and (min-width: 900px) { 
-    .combo { 
-        font-size: 16px;
-    }
-    .combo-group {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .combo-item-image {
-        width: 125px;
-        height: 125px;
-    }
-}
-
-.combo-item-image {
-    border-radius: 1em;
-    margin: 0.8em;
-    width: 75%;
-    height: inherit;
-    flex-shrink: 0;
-    object-fit: cover;
-    margin-right: 1.5em;
-}
-
-.combo-item-text {
-    flex-grow: 1;
-}
-
-.combo-item-heading {
-    text-align: center;
-    padding: 14%;
-    align-items: center;
-}
 img {
     width: 100%;
     display: inline-block;
 }
+
 .logo {
     width: 10%;
-}
-#header {
-    width: 100%;
-    height: 100vh;
-    background-color: #636363;
 }

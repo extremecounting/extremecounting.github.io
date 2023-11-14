@@ -1,6 +1,5 @@
 .container {
     max-width: 1200px;
-    margin: 0 auto;
     padding: 1.5em;
 }
 
@@ -98,6 +97,8 @@ a:visited {
     position: relative;
     background-size: cover;
     background-position: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 
@@ -170,6 +171,12 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+.logo-image {
+    flex-shrink: 0;
+    object-fit: cover;
+    display: flex;
+    height: 50px;
+}
 
 img {
     width: 100%;
