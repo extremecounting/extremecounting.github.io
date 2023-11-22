@@ -14,26 +14,26 @@ a:visited {
     text-decoration: none;
 }
 
-.appsides {
+.mexican {
     margin-top: 1em;
     font-family: 'Bitter', serif;
     font-size: 14px;
 }
 
-.appsides-heading {
+.mexican-heading {
     margin: 0;
     padding-bottom: 0.75em;
     border-bottom: 2px solid #ccc;
 }
 
-.appsides-group {
+.mexican-group {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
     padding: 1em 0;
 }
 
-.appsides-item {
+.mexican-item {
     margin: 8%;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -44,12 +44,12 @@ a:visited {
     border-radius: 15px;
 }
 
-.appsides-item:hover {
+.mexican-item:hover {
     background-color: #ededed;
 }
 
 
-.appsides-item-image {
+.mexican-item-image {
     border-radius: 1em;
     margin: 0.8em;
     width: 75%;
@@ -59,28 +59,28 @@ a:visited {
     margin-right: 1.5em;
 }
 
-.appsides-item-text {
+.mexican-item-text {
     flex-grow: 1;
 }
 
-.appsides-item-heading {
+.mexican-item-heading {
     text-align: center;
     padding: 14%;
     align-items: center;
 }
 
-.appsides-item-name {
-    margin-right: 1.5em;
+.mexican-item-name {
+    margin-right: 1em;
 }
 
 @media screen and (min-width: 900px) { 
-    .appsides { 
+    .mexican { 
         font-size: 16px;
     }
-    .appsides-group {
+    .mexican-group {
         grid-template-columns: repeat(2, 1fr);
     }
-    .appsides-item-image {
+    .mexican-item-image {
         width: 125px;
         height: 125px;
     }

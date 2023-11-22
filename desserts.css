@@ -15,7 +15,7 @@ a:visited {
 }
 
 .dessert {
-    margin-top: 1.5em;
+    margin-top: 1em;
     font-family: 'Bitter', serif;
     font-size: 14px;
 }
@@ -29,8 +29,8 @@ a:visited {
 .dessert-group {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5em;
-    padding: 1.5em 0;
+    gap: 1em;
+    padding: 1em 0;
 }
 
 .dessert-item {
@@ -40,8 +40,7 @@ a:visited {
     display: flex;
     background-color: white;
     transition: background-color 650ms;
-    border-style: solid;
-    border-width: 1px;
+    font-size: 24px;
     border-radius: 15px;
 }
 
@@ -120,23 +119,31 @@ a:visited {
     --size: 200px;
 }   
 
+.navbar-container {
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
 nav {
-    height: 80px;
+    height: inherit !important;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #c9c9c9;
-    
+    background-color: whitesmoke;
 }
 nav ul span a {
     border: white;
-    
 }
 
 nav ul {
-    margin: auto;
-    height: 50%;
+    margin: auto; 
+    height: inherit;
+    width: 100%;
     align-content: center;
 }
 
@@ -144,8 +151,13 @@ nav ul li {
     display: inline-block;
     list-style: none;
     margin: -50px 100px;
-    
+}
 
+nav ul li {
+    transform: translateY(-800%);
+    display: inline-block;
+    list-style: none;
+    margin: 0px 100px;
 }
 
 nav ul li a {
@@ -153,7 +165,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     position: relative;
-    right: 45px;
+    right: 0px;
 }
 
 nav ul li a::after {
@@ -171,11 +183,53 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-img {
-    width: 100%;
-    display: inline-block;
-}
+.logo-image {
+    flex-shrink: 0;
+    object-fit: cover;
+    height: 80px;
+ }
 
-.logo {
-    width: 10%;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.logo-div, .nav-items {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.nav-item {
+    list-style: none;
+}
+ 
+.nav-item a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    right: 45px;
+}
+ 
+.nav-item a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: gray;
+    position: absolute;
+    left: 0%;
+    bottom: -6px;
+    transition: 0.5s;
+}
+ 
+.nav-item a:hover::after {
+    width: 100%;
+}
+ 
+.logo-image {
+    position: relative; 
+    margin: 4%;
+    transform: translateY(-40%);
+    height: 14vh;
+    width: 7vw;
 }
