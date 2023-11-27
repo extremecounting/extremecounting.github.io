@@ -5,12 +5,12 @@
 
 .image{
     align-items: right;
-    height: 20px;
+    height: 50px;
     width: 30px;
 }
 .description{
     font-family: 'Bitter', serif;
-    font-size: 20px;
+    font-size: 14px;
     align-items: left;
 }
 a {
