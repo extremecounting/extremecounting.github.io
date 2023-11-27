@@ -4,13 +4,14 @@
 }
 
 image{
-    float: right;
+    align-items: right;
     height: 20px;
     width: 30px;
 }
 description{
     font-family: 'Bitter', serif;
     font-size: 20px;
+    align-items: left;
 }
 a {
     color: inherit;
