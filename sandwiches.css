@@ -14,26 +14,26 @@ a:visited {
     text-decoration: none;
 }
 
-.sandwhiches {
+.sandwiches {
     margin-top: 1em;
     font-family: 'Bitter', serif;
     font-size: 14px;
 }
 
-.sandwhiches-heading {
+.sandwiches-heading {
     margin: 0;
     padding-bottom: 0.75em;
     border-bottom: 2px solid #ccc;
 }
 
-.sandwhiches-group {
+.sandwiches-group {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
     padding: 1em 0;
 }
 
-.sandwhiches-item {
+.sandwiches-item {
     margin: 8%;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -44,12 +44,12 @@ a:visited {
     border-radius: 15px;
 }
 
-.sandwhiches-item:hover {
+.sandwiches-item:hover {
     background-color: #ededed;
 }
 
 
-.sandwhiches-item-image {
+.sandwiches-item-image {
     border-radius: 1em;
     margin: 0.8em;
     width: 75%;
@@ -59,28 +59,28 @@ a:visited {
     margin-right: 1.5em;
 }
 
-.sandwhiches-item-text {
+.sandwiches-item-text {
     flex-grow: 1;
 }
 
-.sandwhiches-item-heading {
+.sandwiches-item-heading {
     text-align: center;
     padding: 14%;
     align-items: center;
 }
 
-.sandwhiches-item-name {
+.sandwiches-item-name {
     margin-right: 1em;
 }
 
 @media screen and (min-width: 900px) { 
-    .sandwhiches { 
+    .sandwiches { 
         font-size: 16px;
     }
-    .sandwhiches-group {
+    .sandwiches-group {
         grid-template-columns: repeat(2, 1fr);
     }
-    .sandwhiches-item-image {
+    .sandwiches-item-image {
         width: 125px;
         height: 125px;
     }
