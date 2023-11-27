@@ -3,12 +3,12 @@
     padding: 1.5em;
 }
 
-image{
+.image{
     align-items: right;
     height: 20px;
     width: 30px;
 }
-description{
+.description{
     font-family: 'Bitter', serif;
     font-size: 20px;
     align-items: left;
