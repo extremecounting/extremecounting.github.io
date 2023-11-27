@@ -9,6 +9,10 @@ image{
     width: 30px;
     margin: 4%;
 }
+description{
+    font-family: 'Bitter', serif;
+    font-size: 14px;
+}
 a {
     color: inherit;
     text-decoration: none;
