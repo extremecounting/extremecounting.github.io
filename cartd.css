@@ -13,6 +13,63 @@ a:visited {
     color: inherit;
     text-decoration: none;
 }
+
+.menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.cart-item {
+    margin: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    transition: background-color 650ms;
+    border-radius: 15px;
+    font-size: 24px;
+}
+
+.cart-item:hover {
+    background-color: #ededed;
+}
+
+
+.cart-item-image {
+    border-radius: 1em;
+    margin: 0.9em;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+    aspect-ratio: 1 / 1;
+    width: 200px;
+    height: 200px;
+}
+
+.cart-item-text {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cart-item-heading {
+    text-align: center;
+    align-items: center;
+}
+
+.cart-item-description {
+    text-align: center;
+}
+
+.cart-item-name {
+    margin-right: 1em;
+}
+
 #header {
     width: 100%;
     height: 100vh;
@@ -25,9 +82,6 @@ a:visited {
     margin-left: 10%;
     margin-right: 10%;
 }
-
-
-
 
 .container:before {    
     --size: 0;

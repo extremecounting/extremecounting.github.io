@@ -6,14 +6,27 @@
 
 .image{
     align-items: right;
-    height: 50px;
-    width: 30px;
+    /*The size needs to be changed but I'll leave it up to you to decide what size*/
+    height: 125px;
+    width: 125px;
     float: right;
+    
+    /*I think u need this stuff*/
+    flex-shrink: 0;
+    object-fit: cover;
 }
 .description{
     font-family: 'Bitter', serif;
-    font-size: 14px;
+    font-size: 17px; /*I made the font size a little bit bigger, 18 might even be better, it's up to you 
+    (BTW, data.js is going to start having a lot of the data for any product items if u need it, like description, name, price, and image path)*/
     align-items: left;
+}
+.product-info { /*Added the class, I don't know if it's necesary or not, but it's the only way I know how to
+     make the inner divs be seperated like that, feel free to remove it*/
+    margin-top: 2em; 
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 a {
     color: inherit;
