@@ -14,11 +14,20 @@ section.image {
     float: right;
     flex-shrink: 0;
     object-fit: cover;
+    border-radius: 8%;
 }
 .description{
     font-family: 'Bitter', serif;
     font-size: 20px;
     align-items: left;
+    margin: 5%;
+    margin-top: 0%;
+}
+.add-cart {
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 .description h2 {
     text-align: center;
@@ -51,7 +60,7 @@ section.image {
 
 .options {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 2%;
     margin-right: 8%;
 }
