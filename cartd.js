@@ -16,12 +16,19 @@ function startup() {
                 <div class="cart-item">
                     <img class="cart-item-image" src="images/1.png" alt="OOPS">
                     <div class="cart-item-text">
-                        <h3 class="cart-item-heading">
-                            ${item.name} (${localStorage.getItem(key)})
-                        </h3>
-                        <p class="cart-item-description">
-                            ${item.description}
-                        </p>
+                    <div class="cart-item-heading">
+                        <div class="cart-item-title">
+                            <h3>${item.name} (${localStorage.getItem(key)})</h3>  
+                        </div>
+                    </div>
+                    <div class="options">
+                        <button class="add-order" id="add_${item.id}">Add item</button>
+                        <button class="remove-order" id="remove_${item.id}">Remove item</button>
+                    </div>
+                        
+                    <p class="cart-item-description">
+                        ${item.description}
+                    </p>
                     </div>
                 </div>`;
             }}
@@ -36,6 +43,15 @@ function startup() {
     
   }
   startup();
+
+  document.getElementById('add-burger').addEventListener('click', function() {
+
+    if (localStorage.getItem('gd_burger') == null) {
+      localStorage.setItem('gd_burger', 1);
+    } else {
+      localStorage.setItem('gd_burger', +localStorage.getItem('gd_burger') + 1);
+    }
+  });
   /*`
                 <div class="${item.id}">
                     <h1>You have ${+localStorage.getItem(key)} items of ${item.name}</h1>
