@@ -43,15 +43,38 @@ function startup() {
     
   }
   startup();
+let buttons = document.querySelectorAll('button');
 
-  document.getElementById('add-burger').addEventListener('click', function() {
-
-    if (localStorage.getItem('gd_burger') == null) {
-      localStorage.setItem('gd_burger', 1);
-    } else {
-      localStorage.setItem('gd_burger', +localStorage.getItem('gd_burger') + 1);
-    }
-  });
+buttons.forEach(button => {
+    let itemName = button.id;
+    button.addEventListener('click', function() {
+        if (itemName.startsWith("add_")) {
+            console.log("adding stuff");
+            itemDatabase.forEach((item) => {
+                if (itemName.endsWith(item.id)) {
+                    localStorage.setItem(item.id, +localStorage.getItem(item.id) + 1);
+                }
+            })
+          } else if (itemName.startsWith("remove_")) {
+            itemDatabase.forEach((item) => {
+                if (itemName.endsWith(item.id)) {
+                    console.log("removing stuff");
+                   if (localStorage.getItem(item.id) <= 1) {
+                        localStorage.removeItem(item.id);
+                   } else  if (localStorage.getItem(item.id) > 1) {
+                        localStorage.setItem(item.id, +localStorage.getItem(item.id) - 1);
+                   }
+                }
+            })
+          } 
+location.reload();
+          
+    });
+  
+  
+  //let itemAmount = localStorage.getItem(itemName);
+});
+ 
   /*`
                 <div class="${item.id}">
                     <h1>You have ${+localStorage.getItem(key)} items of ${item.name}</h1>
