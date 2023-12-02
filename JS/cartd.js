@@ -3,6 +3,7 @@ const stuffclass = document.querySelector('.cart-list');
 
 
 function startup() {
+    var i = 0;
     console.log('Starting...');
     //burger example, needs to be dynamic for wtv is in the cart (also obviously needs to be changed)
     for (let i = 0; i < localStorage.length; i++) {
@@ -11,7 +12,7 @@ function startup() {
         let key = localStorage.key(i);
         itemDatabase.forEach((item) => 
             {if (item.id == key){
-                console.log('found stuff');
+                i++;
                 stuffclass.innerHTML += `
                 <div class="cart-item">
                     <img class="cart-item-image" src="images/1.png" alt="OOPS">
@@ -36,6 +37,12 @@ function startup() {
                 </div>`;
             }}
         );
+    }
+    if (i == 0) {
+        stuffclass.innerHTML += `
+        <div class="empty-cart">
+            <h1>Your cart is empty!<br>Add items and they will appear here.</h1>
+        </div>`;
     }
   }
   startup();
