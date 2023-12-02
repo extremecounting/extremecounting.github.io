@@ -280,3 +280,38 @@ nav ul li a:hover::after {
     margin: 2%;
     margin-right: 10%;
 }
+.complete-order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.complete-order button {
+    height: 55px;
+    width: 250px;
+    font-size: 18px;
+    background-color: whitesmoke;
+    color: green;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: #45a049;
+    border-width: 3px;
+}
+
+c.complete-order button {
+    height: 55px;
+    width: 250px;
+    font-size: 18px;
+    background-color: whitesmoke;
+    color: green;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: #45a049;
+    border-width: 3px;
+    transition: background-color 1s, color 1s;
+}
+
+.complete-order button:hover {
+    background-color: green;
+    color: white;
+}

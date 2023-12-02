@@ -3,23 +3,21 @@ const stuffclass = document.querySelector('.cart-list');
 
 
 function startup() {
-    var i = 0;
+    var x = 0;
     console.log('Starting...');
-    //burger example, needs to be dynamic for wtv is in the cart (also obviously needs to be changed)
     for (let i = 0; i < localStorage.length; i++) {
         console.log('iterating through ' + i);
-        console.log(localStorage.key(i));
         let key = localStorage.key(i);
-        itemDatabase.forEach((item) => 
+        itemDatabase.forEach((item) =>
             {if (item.id == key){
-                i++;
+                x++;
                 stuffclass.innerHTML += `
                 <div class="cart-item">
                     <img class="cart-item-image" src="images/1.png" alt="OOPS">
                     <div class="cart-item-text">
                         <div class="cart-item-heading">
                             <div class="cart-item-title">
-                                <h3>${item.name}</h3>  
+                                <h3>${item.name}</h3>
                             </div>
                         </div>
                         <div class="options">
@@ -29,7 +27,7 @@ function startup() {
                         <div class="amount">
                             <h3>(${localStorage.getItem(key)})</h3>
                         </div>
-                        
+
                         <p class="cart-item-description">
                             ${item.description}
                         </p>
@@ -37,12 +35,20 @@ function startup() {
                 </div>`;
             }}
         );
+
     }
-    if (i == 0) {
+    if (x == 0) {
         stuffclass.innerHTML += `
         <div class="empty-cart">
             <h1>Your cart is empty!<br>Add items and they will appear here.</h1>
         </div>`;
+        console.log(x + " is less then one");
+    } else {
+        stuffclass.innerHTML += `
+        <div class="complete-order">
+        <button id="pay">Continue and Pay</button>
+      </div>`;
+      console.log(x + " is greater then 0");
     }
   }
   startup();
@@ -51,6 +57,13 @@ let buttons = document.querySelectorAll('button');
 buttons.forEach(button => {
     let itemName = button.id;
     button.addEventListener('click', function() {
+        if (itemName == 'pay') {
+            
+        }
+        if (localStorage.length === 0){
+            console.log("Local storage is empty");
+        }
+        
         if (itemName.startsWith("add_")) {
             console.log("adding stuff");
             itemDatabase.forEach((item) => {
