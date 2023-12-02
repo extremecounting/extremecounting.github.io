@@ -16,31 +16,27 @@ function startup() {
                 <div class="cart-item">
                     <img class="cart-item-image" src="images/1.png" alt="OOPS">
                     <div class="cart-item-text">
-                    <div class="cart-item-heading">
-                        <div class="cart-item-title">
-                            <h3>${item.name} (${localStorage.getItem(key)})</h3>  
+                        <div class="cart-item-heading">
+                            <div class="cart-item-title">
+                                <h3>${item.name}</h3>  
+                            </div>
                         </div>
-                    </div>
-                    <div class="options">
-                        <button class="add-order" id="add_${item.id}">Add item</button>
-                        <button class="remove-order" id="remove_${item.id}">Remove item</button>
-                    </div>
+                        <div class="options">
+                            <button class="add-order" id="add_${item.id}">Add item</button>
+                            <button class="remove-order" id="remove_${item.id}">Remove item</button>
+                        </div>
+                        <div class="amount">
+                            <h3>(${localStorage.getItem(key)})</h3>
+                        </div>
                         
-                    <p class="cart-item-description">
-                        ${item.description}
-                    </p>
+                        <p class="cart-item-description">
+                            ${item.description}
+                        </p>
                     </div>
                 </div>`;
             }}
         );
     }
-    if (itemAmount > 5) {
-        //simulating another item
-        document.querySelector('.item').innerHTML += `
-        <h2>You have a lot of items!</h2>
-        `
-    }
-    
   }
   startup();
 let buttons = document.querySelectorAll('button');
@@ -67,7 +63,7 @@ buttons.forEach(button => {
                 }
             })
           } 
-location.reload();
+        location.reload();
           
     });
   

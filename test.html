@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="cartd.css" />
+    <link rel="stylesheet" href="cart.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,12 +31,20 @@
           </ul>
         </nav>
       </div>
-      <div class="cart-class">
-        <div class="cart-list">
+      <div class="shopping-cart">
+        <h2>Shopping Cart</h2>
+        <div class="cart-items">
+          <!-- Cart items will be dynamically added here -->
         </div>
+        <button id="add-burger">Add Burger</button>
+        <button id="remove-burger">Remove Burger</button>
+        <button id="add-fries">Add Fries</button>
+        <button id="remove-fries">Remove Fries</button>
+        <button id="clear-all">CLEAR</button>
       </div>
     </div>
+
     <script src="data.js"></script>
-    <script src="cartd.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>

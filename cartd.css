@@ -221,6 +221,11 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: space-between;
 }
+.amount {
+    position: absolute;
+    bottom: 10%;
+    right: 8.5%;
+}
 .options{
     display: flex;
     flex-direction: column;
@@ -265,8 +270,13 @@ nav ul li a:hover::after {
     background-color: #45a049; /* Darker green on hover */
 }
 .cart-item-title {
-    margin-right: 15%;
+    margin-left: 15%;
 }
 .cart-item-description {
-    transform: translateX(-60%);
+    transform: translateX(-10%);
+    width: 75%;
+    align-items: center;
+    text-overflow: ellipsis;
+    margin: 2%;
+    margin-right: 10%;
 }

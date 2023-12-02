@@ -34,7 +34,7 @@ section.image {
     text-decoration: underline;
 }
 .description p1 {
-    line-height: 2; /* By setting this property you can increase the line spacing */
+    line-height: 2;
     margin: 5%;
     margin-top: 100px;
 }
@@ -42,8 +42,7 @@ section.image {
     text-decoration: underline;
     font-size: 18px;
 } 
-.product-info { /*Added the class, I don't know if it's necesary or not, but it's the only way I know how to
-     make the inner divs be seperated like that, feel free to remove it*/
+.product-info {
     margin-top: 2em; 
     display: flex;
     flex-direction: row-reverse;
@@ -64,7 +63,10 @@ section.image {
     margin: 2%;
     margin-right: 8%;
 }
-
+.options button { 
+    height: 35px;
+    border-radius: 5px;
+}
 
 a {
     color: inherit;

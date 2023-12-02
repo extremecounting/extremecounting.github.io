@@ -6,6 +6,19 @@ if(applePieElem) {
     } else {
       localStorage.setItem('apple_pie', +localStorage.getItem('apple_pie') + 1);
     }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
   });
 }
 
@@ -17,6 +30,19 @@ if(bacBurgerElem) {
     } else {
       localStorage.setItem('bacon_burger', +localStorage.getItem('bacon_burger') + 1);
     }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
   });
 }
 
@@ -28,6 +54,19 @@ if(bbqBurgerElem){
     } else {
       localStorage.setItem('bbq_burger', +localStorage.getItem('bbq_burger') + 1);
     }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
   });
 }
 
@@ -39,6 +78,19 @@ if(brownieElem) {
     } else {
       localStorage.setItem('brownie', +localStorage.getItem('brownie') + 1);
     }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
   });
 }
 
@@ -50,6 +102,19 @@ if(bufWingsElem) {
     } else {
       localStorage.setItem('buffalo_wings', +localStorage.getItem('buffalo_wings') + 1);
     }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
   });
 }
 
@@ -61,6 +126,19 @@ if(slidersElem) {
     } else {
       localStorage.setItem('sliders', +localStorage.getItem('sliders') + 1);
     }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
   });
 }
 
@@ -72,6 +150,19 @@ if(chickenStripElem) {
     } else {
       localStorage.setItem('chicken_strips', +localStorage.getItem('chicken_strips') + 1);
     }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
   });
 }
 
@@ -83,6 +174,19 @@ if(friesElem) {
     } else {
       localStorage.setItem('fries', +localStorage.getItem('fries') + 1);
     }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
   });
 }
 
@@ -94,6 +198,19 @@ if(gdBurgerElem) {
     } else {
       localStorage.setItem('gd_burger', +localStorage.getItem('gd_burger') + 1);
     }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
   });
 }
 
@@ -105,6 +222,19 @@ if(macCheeseElem) {
     } else {
       localStorage.setItem('mac_and_cheese', +localStorage.getItem('mac_and_cheese') + 1);
     }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
   });
 }
 
@@ -116,6 +246,19 @@ if(mozStickElem) {
     } else {
       localStorage.setItem('mozzarella_sticks', +localStorage.getItem('mozzarella_sticks') + 1);
     }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
   });
 }
 
@@ -127,6 +270,19 @@ if(onionRingsElem) {
     } else {
       localStorage.setItem('onion_rings', +localStorage.getItem('onion_rings') + 1);
     }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
   });
 }
 
@@ -138,6 +294,19 @@ if(plainWingsElem) {
     } else {
       localStorage.setItem('plain_wings', +localStorage.getItem('plain_wings') + 1);
     }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
   });
 }
 
@@ -149,5 +318,18 @@ if(samplingWingsElem) {
     } else {
       localStorage.setItem('sampling_wings', +localStorage.getItem('sampling_wings') + 1);
     }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
   });
 }
