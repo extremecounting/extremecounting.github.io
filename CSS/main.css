@@ -156,12 +156,12 @@ nav ul li a:hover::after {
     width: 7vw;
 }
 .contact-us{ 
-    position: relative; 
+    position: absolute; bottom:0;
     bottom: 0;
     width: 10;
-    background: orange;
+    background: rgb(116, 101, 73);
     height: 300px;
-    box-align: bottom
+    box-align: bottom;
     
 }
 .contact-us div{
