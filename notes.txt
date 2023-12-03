@@ -166,3 +166,21 @@ img {
     height: 100vh;
     background-color: #636363;
 }
+
+.contact-us { 
+    position: absolute; 
+    bottom: 1%;
+    width: 100;
+    background: rgb(139, 139, 139);
+    height: 300px;
+}
+.right{
+    text-align:right
+}
+.center{
+    text-align:center
+
+}
+.left{
+    text-align:left
+}
