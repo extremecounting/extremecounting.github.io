@@ -158,12 +158,17 @@ nav ul li a:hover::after {
 .contact-us{ 
     position: absolute; bottom:0;
     bottom: 0;
-    width: 10;
-    background: rgb(116, 101, 73);
+    width: 20;
+    background: rgb(74, 64, 48);
     height: 300px;
-    box-align: bottom;
-    
 }
-.contact-us div{
-    text-align: center;
+.right{
+    text-align:right
+}
+.center{
+    text-align:center
+
+}
+left{
+    text-align:left
 }
