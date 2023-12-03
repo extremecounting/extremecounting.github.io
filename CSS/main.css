@@ -1,28 +1,29 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
-#header {
-    width: 100%;
-    height: 100vh;
-    
-    background-color: #e6e6e6;
-    
-}
 .container {
-    /*padding: 10px 10%;*/
+    max-width: 1200px;
+    padding: 1.5em;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
     position: relative;
-    
-    color: #fff;
     background-size: cover;
     background-position: center;
-    color: white;
-    outline: none;
-    overflow: hidden;
-    cursor: auto;
+    margin-left: 10%;
+    margin-right: 10%;
 }
+
+
+
 
 .container:before {    
     --size: 0;
@@ -32,7 +33,6 @@
     top: var(--y);
     width: 300px;
     height: 300px;
-    /*background: radial-gradient(circle closest-side, #151F22, transparent);*/
     transform: translate(-50%, -50%);
     transition: width 0.2s ease, height 0.2s ease;
 }
@@ -41,27 +41,45 @@
     --size: 200px;
 }   
 
+.navbar-container {
+    position: relative;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
 nav {
-    height: 80px;
+    height: inherit !important;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: whitesmoke;
-    
+}
+nav ul span a {
+    border: white;
 }
 
 nav ul {
-    margin: auto;
-    height: 50%;
+    margin: auto; 
+    height: inherit;
+    width: 100%;
+    align-content: center;
 }
 
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: -50px 100px;
-    
+}
 
+nav ul li {
+    transform: translateY(-800%);
+    display: inline-block;
+    list-style: none;
+    margin: 0px 100px;
 }
 
 nav ul li a {
@@ -69,7 +87,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     position: relative;
-    right: 45px;
+    right: 0px;
 }
 
 nav ul li a::after {
@@ -90,15 +108,62 @@ nav ul li a:hover::after {
 .logo-image {
     flex-shrink: 0;
     object-fit: cover;
+    height: 80px;
+ }
+
+.navbar {
     display: flex;
-    height: 50px;
+    justify-content: space-between;
 }
-
-img {
+ 
+.logo-div, .nav-items {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.nav-item {
+    list-style: none;
+}
+ 
+.nav-item a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    right: 45px;
+}
+ 
+.nav-item a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: gray;
+    position: absolute;
+    left: 0%;
+    bottom: -6px;
+    transition: 0.5s;
+}
+ 
+.nav-item a:hover::after {
     width: 100%;
-    display: inline-block;
 }
-
-.logo {
-    width: 10%;
+ 
+.logo-image {
+    position: relative; 
+    margin: 4%;
+    transform: translateY(-40%);
+    height: 14vh;
+    width: 7vw;
+}
+.contact-us{ 
+    position: relative; 
+    bottom: 0;
+    width: 10;
+    background: orange;
+    height: 300px;
+    box-align: bottom
+    
+}
+.contact-us div{
+    text-align: center;
 }
