@@ -47,6 +47,7 @@ if (checkoutButton) {
             document.body.appendChild(msg);
             setTimeout(function() {
                msg.parentNode.removeChild(msg);
+               window.location.href = "main.html";
             }, 1250);
         }
     });
