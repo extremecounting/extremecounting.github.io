@@ -4,12 +4,16 @@ const stuffclass = document.querySelector('.cart-list');
 
 function startup() {
     var x = 0;
+    var total = 0;
     console.log('Starting...');
     for (let i = 0; i < localStorage.length; i++) {
         console.log('iterating through ' + i);
         let key = localStorage.key(i);
         itemDatabase.forEach((item) =>
-            {if (item.id == key){
+            {
+                
+                if (item.id == key){
+                    total += item.price * localStorage.getItem(key);
                 x++;
                 stuffclass.innerHTML += `
                 <div class="cart-item">
@@ -17,7 +21,7 @@ function startup() {
                     <div class="cart-item-text">
                         <div class="cart-item-heading">
                             <div class="cart-item-title">
-                                <h3>${item.name}</h3>
+                                <h3>${item.name}<br>$${item.price*+localStorage.getItem(key)} </h3>
                             </div>
                         </div>
                         <div class="options">
@@ -42,14 +46,14 @@ function startup() {
         <div class="empty-cart">
             <h1>Your cart is empty!<br>Add items and they will appear here.</h1>
         </div>`;
-        console.log(x + " is less then one");
     } else {
         stuffclass.innerHTML += `
         <div class="complete-order">
         <button id="pay">Continue and Pay</button>
+        <h2>Total: ${total.toFixed(2)}</h2>
       </div>`;
-      console.log(x + " is greater then 0");
     }
+    localStorage.setItem("total_", total.toFixed(2));
   }
   startup();
 let buttons = document.querySelectorAll('button');

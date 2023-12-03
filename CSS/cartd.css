@@ -270,6 +270,7 @@ nav ul li a:hover::after {
     background-color: #45a049; 
 }
 .cart-item-title {
+    transform: translateX(-15%);
     margin-left: 15%;
 }
 .cart-item-description {
@@ -279,6 +280,7 @@ nav ul li a:hover::after {
     text-overflow: ellipsis;
     margin: 2%;
     margin-right: 10%;
+    margin-top: 0%;
 }
 .complete-order {
     display: flex;
@@ -298,7 +300,7 @@ nav ul li a:hover::after {
     border-width: 3px;
 }
 
-c.complete-order button {
+.complete-order button {
     height: 55px;
     width: 250px;
     font-size: 18px;
@@ -314,4 +316,9 @@ c.complete-order button {
 .complete-order button:hover {
     background-color: green;
     color: white;
+}
+
+.complete-order h2 {
+    position: absolute;
+    right: 12%;
 }
