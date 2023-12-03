@@ -209,3 +209,16 @@ nav ul li a:hover::after {
 .left{
     text-align:left
 }
+
+.team-member-info { 
+    height: 200px;
+    padding: 1%;
+    padding-right: 5%;
+    background-color: #D7D7D7;
+}
+
+.team-member-info p {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 1%;
+}

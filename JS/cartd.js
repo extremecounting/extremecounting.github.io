@@ -50,7 +50,7 @@ function startup() {
         stuffclass.innerHTML += `
         <div class="complete-order">
         <button id="pay">Continue and Pay</button>
-        <h2>Total: ${total.toFixed(2)}</h2>
+        <h2>Total: $${total.toFixed(2)}</h2>
       </div>`;
     }
     localStorage.setItem("total_", total.toFixed(2));
