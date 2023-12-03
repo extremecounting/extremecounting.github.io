@@ -58,7 +58,9 @@ buttons.forEach(button => {
     let itemName = button.id;
     button.addEventListener('click', function() {
         if (itemName == 'pay') {
-            
+            console.log("THIS IS A TEST");
+            window.location.href = "checkout.html";
+            return;
         }
         if (localStorage.length === 0){
             console.log("Local storage is empty");
