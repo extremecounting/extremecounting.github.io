@@ -16,12 +16,12 @@ const itemDatabase = [
     description: "Cake with a , liquid chocolate center. Served with a strawberry and sprinkled with powdered sugar.",
     imgPath: "images/lavacake.jpg"},
 
-
+    
     //burgers
     {id:"gd_burger",
     name: "Game Day Burger",
     price: 9.99,
-    description: "A burger that's perfect for a big game day—loaded with juicy beef, melted cheese, our signature sauce, crisp lettuce and ripe tomatoes, all on a toasted bun.",
+    description: "A thick burger with our signature sauce, cheese, and fresh tomatoes, lettuce, onions, and pickles",
     imgPath: "images/gdburger.jpg"},
     {id:"bacon_burger",
     name: "Bacon Burger",
