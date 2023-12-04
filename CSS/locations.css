@@ -41,6 +41,7 @@ a:visited {
     --size: 200px;
 }   
 
+
 .navbar-container {
     position: relative;
     z-index: 9999;
@@ -154,4 +155,17 @@ nav ul li a:hover::after {
     transform: translateY(-40%);
     height: 14vh;
     width: 7vw;
+}
+
+
+.locations {
+    padding: 1%;
+    background-color: #D7D7D7;
+    margin-top: 2%;
+    border-radius: 15px;
+}
+
+.locations p {
+    font-size: 20px;
+    line-height: 2; 
 }

@@ -10,7 +10,7 @@ function startup() {
 startup();
 if (checkoutButton) {
     checkoutButton.addEventListener('click', function() {
-        var anyEmpty = true;
+        var anyEmpty = false;
         let textBoxes = document.querySelectorAll('input[type="text"]');
         textBoxes.forEach(textBox => {
             if(textBox.value.trim() === "") {
@@ -32,6 +32,22 @@ if (checkoutButton) {
             document.body.appendChild(msg);
             setTimeout(function() {
                msg.parentNode.removeChild(msg);
+            }, 1250);
+        } else {
+            var msg = document.createElement('div');
+            msg.textContent = 'Order Confirmed!';
+            msg.style.position = 'fixed';
+            msg.style.bottom = '10px';
+            msg.style.right = '10px';
+            msg.style.padding = '20px';  // increased padding to make the box bigger
+            msg.style.fontSize = '20px';  // increased font size
+            msg.style.color = 'white';
+            msg.style.background = 'green';
+            msg.style.borderRadius = '5px';
+            document.body.appendChild(msg);
+            setTimeout(function() {
+               msg.parentNode.removeChild(msg);
+               window.location.href = "main.html";
             }, 1250);
         }
     });

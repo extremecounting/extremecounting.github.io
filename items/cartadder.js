@@ -118,6 +118,78 @@ if(bufWingsElem) {
   });
 }
 
+var porkComboElem = document.getElementById('add-porkcombo');
+if(porkComboElem) {
+  porkComboElem.addEventListener('click', function() {
+    if (localStorage.getItem('pork_combo') == null) {
+      localStorage.setItem('pork_combo', 1);
+    } else {
+      localStorage.setItem('pork_combo', +localStorage.getItem('pork_combo') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px'; 
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
+var burgComboElem = document.getElementById('add-burgcombo');
+if(burgComboElem) {
+  burgComboElem.addEventListener('click', function() {
+    if (localStorage.getItem('burger_combo') == null) {
+      localStorage.setItem('burger_combo', 1);
+    } else {
+      localStorage.setItem('burger_combo', +localStorage.getItem('burger_combo') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
+var wingComboElem = document.getElementById('add-wingcombo');
+if(wingComboElem) {
+  wingComboElem.addEventListener('click', function() {
+    if (localStorage.getItem('wing_combo') == null) {
+      localStorage.setItem('wing_combo', 1);
+    } else {
+      localStorage.setItem('wing_combo', +localStorage.getItem('wing_combo') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
 var slidersElem = document.getElementById('add-sliders');
 if(slidersElem) {
   slidersElem.addEventListener('click', function() {
@@ -317,6 +389,270 @@ if(samplingWingsElem) {
       localStorage.setItem('sampling_wings', 1);
     } else {
       localStorage.setItem('sampling_wings', +localStorage.getItem('sampling_wings') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
+var caesarSaladElem = document.getElementById('add-caesalad');
+if(caesarSaladElem) {
+  caesarSaladElem.addEventListener('click', function() {
+    if (localStorage.getItem('caesar_salad') == null) {
+      localStorage.setItem('caesar_salad', 1);
+    } else {
+      localStorage.setItem('caesar_salad', +localStorage.getItem('caesar_salad') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
+var chickenSaladElem = document.getElementById('add-chicksalad');
+if(chickenSaladElem) {
+  chickenSaladElem.addEventListener('click', function() {
+    if (localStorage.getItem('chicken_salad') == null) {
+      localStorage.setItem('chicken_salad', 1);
+    } else {
+      localStorage.setItem('chicken_salad', +localStorage.getItem('chicken_salad') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
+var vegSaladElem = document.getElementById('add-vegsalad');
+if(vegSaladElem) {
+  vegSaladElem.addEventListener('click', function() {
+    if (localStorage.getItem('vegetable_salad') == null) {
+      localStorage.setItem('vegetable_salad', 1);
+    } else {
+      localStorage.setItem('vegetable_salad', +localStorage.getItem('vegetable_salad') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
+var clubSandElem = document.getElementById('add-clubsand');
+if(clubSandElem) {
+  clubSandElem.addEventListener('click', function() {
+    if (localStorage.getItem('club_sandwich') == null) {
+      localStorage.setItem('club_sandwich', 1);
+    } else {
+      localStorage.setItem('club_sandwich', +localStorage.getItem('club_sandwich') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
+var cubanSandElem = document.getElementById('add-cubansand');
+if(cubanSandElem) {
+  cubanSandElem.addEventListener('click', function() {
+    if (localStorage.getItem('cuban_sandwich') == null) {
+      localStorage.setItem('cuban_sandwich', 1);
+    } else {
+      localStorage.setItem('cuban_sandwich', +localStorage.getItem('cuban_sandwich') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
+var cubanSandElem = document.getElementById('add-cubansand');
+if(cubanSandElem) {
+  cubanSandElem.addEventListener('click', function() {
+    if (localStorage.getItem('cuban_sandwich') == null) {
+      localStorage.setItem('cuban_sandwich', 1);
+    } else {
+      localStorage.setItem('cuban_sandwich', +localStorage.getItem('cuban_sandwich') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
+var waterElem = document.getElementById('add-water');
+if(waterElem) {
+  waterElem.addEventListener('click', function() {
+    if (localStorage.getItem('water') == null) {
+      localStorage.setItem('water', 1);
+    } else {
+      localStorage.setItem('water', +localStorage.getItem('water') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
+var cokeElem = document.getElementById('add-coke');
+if(cokeElem) {
+  cokeElem.addEventListener('click', function() {
+    if (localStorage.getItem('coke') == null) {
+      localStorage.setItem('coke', 1);
+    } else {
+      localStorage.setItem('coke', +localStorage.getItem('coke') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
+var spriteElem = document.getElementById('add-sprite');
+if(spriteElem) {
+  spriteElem.addEventListener('click', function() {
+    if (localStorage.getItem('sprite') == null) {
+      localStorage.setItem('sprite', 1);
+    } else {
+      localStorage.setItem('sprite', +localStorage.getItem('sprite') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
+var lemonadeElem = document.getElementById('add-lemonade');
+if(lemonadeElem) {
+  lemonadeElem.addEventListener('click', function() {
+    if (localStorage.getItem('lemonade') == null) {
+      localStorage.setItem('lemonade', 1);
+    } else {
+      localStorage.setItem('lemonade', +localStorage.getItem('lemonade') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
+var lavaCakeElem = document.getElementById('add-lavacake');
+if(lavaCakeElem) {
+  lavaCakeElem.addEventListener('click', function() {
+    if (localStorage.getItem('lava_cake') == null) {
+      localStorage.setItem('lava_cake', 1);
+    } else {
+      localStorage.setItem('lava_cake', +localStorage.getItem('lava_cake') + 1);
     }
     var msg = document.createElement('div');
     msg.textContent = 'Item added to cart!';

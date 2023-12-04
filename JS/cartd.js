@@ -17,11 +17,11 @@ function startup() {
                 x++;
                 stuffclass.innerHTML += `
                 <div class="cart-item">
-                    <img class="cart-item-image" src="images/1.png" alt="OOPS">
+                    <img class="cart-item-image" src="${item.imgPath}" alt="OOPS">
                     <div class="cart-item-text">
                         <div class="cart-item-heading">
                             <div class="cart-item-title">
-                                <h3>${item.name}<br>$${item.price*+localStorage.getItem(key)} </h3>
+                                <h3>${item.name}<br>$${(item.price*+localStorage.getItem(key)).toFixed(2)} </h3>
                             </div>
                         </div>
                         <div class="options">
@@ -50,7 +50,7 @@ function startup() {
         stuffclass.innerHTML += `
         <div class="complete-order">
         <button id="pay">Continue and Pay</button>
-        <h2>Total: ${total.toFixed(2)}</h2>
+        <h2>Total: $${total.toFixed(2)}</h2>
       </div>`;
     }
     localStorage.setItem("total_", total.toFixed(2));
