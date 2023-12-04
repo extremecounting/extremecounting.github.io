@@ -645,3 +645,27 @@ if(lemonadeElem) {
     }, 1250);
   });
 }
+
+var lavaCakeElem = document.getElementById('add-lavacake');
+if(lavaCakeElem) {
+  lavaCakeElem.addEventListener('click', function() {
+    if (localStorage.getItem('lava_cake') == null) {
+      localStorage.setItem('lava_cake', 1);
+    } else {
+      localStorage.setItem('lava_cake', +localStorage.getItem('lava_cake') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
