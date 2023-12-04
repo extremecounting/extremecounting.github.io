@@ -1,17 +1,17 @@
+
 const itemAmount = +localStorage.getItem('gd_burgers');
 const stuffclass = document.querySelector('.cart-list');
 
 
 function startup() {
+    //item amount
     var x = 0;
+    //item price total
     var total = 0;
-    console.log('Starting...');
     for (let i = 0; i < localStorage.length; i++) {
-        console.log('iterating through ' + i);
         let key = localStorage.key(i);
         itemDatabase.forEach((item) =>
             {
-                
                 if (item.id == key){
                     total += item.price * localStorage.getItem(key);
                 x++;
@@ -41,11 +41,13 @@ function startup() {
         );
 
     }
+    //empty cart
     if (x == 0) {
         stuffclass.innerHTML += `
         <div class="empty-cart">
             <h1>Your cart is empty!<br>Add items and they will appear here.</h1>
         </div>`;
+        //not empty cart
     } else {
         stuffclass.innerHTML += `
         <div class="complete-order">
@@ -61,15 +63,16 @@ let buttons = document.querySelectorAll('button');
 buttons.forEach(button => {
     let itemName = button.id;
     button.addEventListener('click', function() {
+        //pay button
         if (itemName == 'pay') {
-            console.log("THIS IS A TEST");
             window.location.href = "checkout.html";
             return;
         }
+        //no local storage
         if (localStorage.length === 0){
             console.log("Local storage is empty");
         }
-        
+        //add button clicked
         if (itemName.startsWith("add_")) {
             console.log("adding stuff");
             itemDatabase.forEach((item) => {
@@ -77,6 +80,7 @@ buttons.forEach(button => {
                     localStorage.setItem(item.id, +localStorage.getItem(item.id) + 1);
                 }
             })
+            //remove button clicked
           } else if (itemName.startsWith("remove_")) {
             itemDatabase.forEach((item) => {
                 if (itemName.endsWith(item.id)) {
@@ -93,13 +97,6 @@ buttons.forEach(button => {
           
     });
   
-  
-  //let itemAmount = localStorage.getItem(itemName);
+
 });
  
-  /*`
-                <div class="${item.id}">
-                    <h1>You have ${+localStorage.getItem(key)} items of ${item.name}</h1>
-                    <p>${item.description}</p>
-                </div>
-                `;*/

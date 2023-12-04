@@ -11,6 +11,7 @@ startup();
 if (checkoutButton) {
     checkoutButton.addEventListener('click', function() {
         var anyEmpty = false;
+        //select all text boxes
         let textBoxes = document.querySelectorAll('input[type="text"]');
         textBoxes.forEach(textBox => {
             if(textBox.value.trim() === "") {
@@ -18,6 +19,7 @@ if (checkoutButton) {
             } else {
             }
         });
+        //checks if any textboxes are empty
         if (anyEmpty) {
             var msg = document.createElement('div');
             msg.textContent = 'Please fill in all the fields!';
@@ -33,6 +35,7 @@ if (checkoutButton) {
             setTimeout(function() {
                msg.parentNode.removeChild(msg);
             }, 1250);
+        //if they aren't all empty
         } else {
             var msg = document.createElement('div');
             msg.textContent = 'Order Confirmed!';
@@ -51,6 +54,4 @@ if (checkoutButton) {
             }, 1250);
         }
     });
-} else {
-    console.log("smth bad happened");
 }
