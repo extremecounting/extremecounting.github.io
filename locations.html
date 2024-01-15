@@ -33,6 +33,8 @@
         </nav>
       </div>
       <div class="locations">
+        
+        <div id="map"></div>
         <h1>Locations:</h1>
         <p>
           Game Day Grill is proud to serve food in 3 locations: Escanaba, MI;
@@ -48,5 +50,10 @@
         </p>
       </div>
     </div>
+    <script src="JS/locations.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlPsb3LjcS3p1auwYrJW44QEBRKtHEqno&callback=initMap" async defer></script>
+    <script>
+      window.onload = initMap;
+     </script>
   </body>
 </html>
