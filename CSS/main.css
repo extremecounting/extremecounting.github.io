@@ -1,4 +1,3 @@
-
 a {
     color: inherit;
     text-decoration: none;
@@ -157,11 +156,12 @@ nav ul li a:hover::after {
     object-fit: cover;
 }
 .overlay-text {
-    font-size: 90px;
+    white-space: nowrap;
+    min-width: 75%;
+    font-size: 8.5vw;
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -30%);
+    top: 25%;
+    left: 11%;
     color: lightgray;
     background: linear-gradient(to bottom, #FFA500, #C50101);
     -webkit-background-clip: text;
@@ -212,17 +212,22 @@ nav ul li a:hover::after {
     text-align:left
 }
 
-.team-member-info { 
+.footer {
+    
     height: 200px;
     padding: 1%;
-    padding-right: 5%;
     background-color: #D7D7D7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.team-member-info { 
+    height: 100%;
 }
 
 .team-member-info p {
     font-size: 18px;
-    line-height: 1.5;
-    padding: 1%;
+    line-height: 1.25;
 }
 
 .slider-wrapper {
