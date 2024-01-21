@@ -162,7 +162,11 @@ nav ul li a:hover::after {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -30%);
-    color: white;
+    color: lightgray;
+    background: linear-gradient(to bottom, #FFA500, #C50101);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 2px #000000;
 }
 
 .special-events {
@@ -237,7 +241,7 @@ nav ul li a:hover::after {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     max-height: 30rem;
 }
 
