@@ -28,7 +28,7 @@ async function initMap() {
   let center = {lat:lat, lng: lng};
 
   map = new Map(document.getElementById("map"), {
-    zoom: 6.5,
+    zoom: 6,
     center: center,
     mapId: "DEMO_MAP_ID",
   });
