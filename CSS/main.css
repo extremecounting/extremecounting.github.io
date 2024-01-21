@@ -226,22 +226,26 @@ nav ul li a:hover::after {
 }
 
 .special-events {
-    height: 250px;
+    margin-bottom: 1%;
     padding: 1%;
 }
 
+h1 {
+    font-size: 2.4vw;
+}
+
 .special-events p {
-    font-size: 20px;
+    font-size: 1.3vw;
 }
 
 .reservation {
     background-color: #D7D7D7;
-    height: 150px;
     padding: 1%;
     padding-right: 5%;
+    padding-bottom: 2%;
 }
 .reservation p {
-    font-size: 20px;
+    font-size: 1.3vw;
 }
 .email {
     color: blue;
@@ -254,7 +258,7 @@ nav ul li a:hover::after {
 }
 
 .contact-us p {
-    font-size: 20px;
+    font-size: 1.3vw;
 }
 .right{
     text-align:right
