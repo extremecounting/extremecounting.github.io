@@ -40,6 +40,7 @@ function startup() {
             }}
         );
 
+
     }
     //empty cart
     if (x == 0) {

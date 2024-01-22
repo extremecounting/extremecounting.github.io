@@ -51,6 +51,7 @@ if (checkoutButton) {
             setTimeout(function() {
                msg.parentNode.removeChild(msg);
                window.location.href = "main.html";
+
             }, 1250);
         }
     });
