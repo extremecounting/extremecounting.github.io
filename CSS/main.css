@@ -26,6 +26,21 @@ a:visited {
     margin-left: 10%;
     margin-right: 10%;
 }
+.container:before {    
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease;
+}
+
+.container:hover:before {
+    --size: 200px;
+}
 
 .header{
     position: fixed;
