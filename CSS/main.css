@@ -28,7 +28,7 @@ a:visited {
 }
 
 .navbar-container {
-    background:#1E1E1E;
+    background:#ffffff;
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -45,8 +45,6 @@ li a{
     color:white;
     font-size: 18px;
     font-weight: bold;
-    margin-right: 25px;
-
 }
 
 nav {
