@@ -4,7 +4,6 @@ html, body {
     height: 100%;
     /*background-color: #404040;*/
     background-color: #1E1E1E;
-
 }
 p, h1 {
     color: whitesmoke;
@@ -214,25 +213,29 @@ nav ul li a:hover::after {
 .slider-nav a:hover {
     opacity: 1;
 }
-
-
 .special-events {
-    display: none;
     margin-top: 10%;
     margin-bottom: 5%;
-}
-
-.special-events.show {
-    display: block;
+    width: 100%;
 }
 
 .super-bowl {
+    align-items: center;
+    width: 100%;
     display: flex;
+    line-height: 2;
+    
+}
+.super-bowl h1 {
+    font-size: 2vw;
+    text-align: center;
 }
 
 .super-bowl img {
     margin: 1%;
     border-radius: 4%;
+    width: 155vw !important;
+    display: flex;
 }
 
 h1 {
@@ -248,10 +251,7 @@ h1 {
     margin-bottom: 5%;
     display: block;
 }
-
-.reservation.show {
-    display: block;
-}
+    
 
 .reservation {
     padding-bottom: 2%;

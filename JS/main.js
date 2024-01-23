@@ -1,3 +1,5 @@
+var specialEventTranslation = 0;
+
 window.onload = function() {
   // Select all anchor tags inside the element with class 'slider-nav'
   document.querySelectorAll('.slider-nav a').forEach(anchor =>
@@ -18,53 +20,3 @@ window.onload = function() {
   );
 
 };
-window.addEventListener('scroll', function() {
-  var specialEvents = document.getElementById('specialEvents');
-  var scrollPercentage = window.pageYOffset / (document.body.scrollHeight - window.innerHeight);
-  var translation = -100 + scrollPercentage * 175;
-  //console.log(translation);
-  if (translation >= 0 ) {
-    specialEvents.style.transform = 'translateX(0%)'
-  } else {
-    specialEvents.style.transform = 'translateX(' + (translation) + '%)';
-  }
-  
-  if (window.pageYOffset > window.innerHeight * 0.05) { // Change this value to control when the animation starts
-      specialEvents.classList.add('show');
-  } else {
-      specialEvents.classList.remove('show');
-  }
-});
-
-window.addEventListener('scroll', function() {
-  var reservations = document.getElementById('reservations');
-  var scrollPercentage = window.pageYOffset / (document.body.scrollHeight - window.innerHeight);
-  var translation = -100 + (1 - scrollPercentage) * 223; // This makes it scroll in from the right
-  console.log(translation);
-  if (translation > 80) {
-    reservations.style.opacity = '0';
-  } else {
-    reservations.style.opacity = '1';
-  }
-  if (translation <= 0 ) {
-    reservations.style.transform = 'translateX(0%)'
-  } else {
-    reservations.style.transform = 'translateX(' + (translation) + '%)';
-  }
-
-  if (window.pageYOffset > window.innerHeight * 0.05) { // Change this value to control when the animation starts
-      specialEvents.classList.add('show');
-  } else {
-      specialEvents.classList.remove('show');
-  }
-});
-
-
-window.addEventListener('scroll', function() {
-  var footer = document.getElementById('footer');
-  if (window.scrollY > 100) { // Change this value to control when the animation starts
-    footer.classList.add('show');
-  } else {
-    footer.classList.remove('show');
-  }
-});
