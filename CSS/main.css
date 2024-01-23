@@ -2,11 +2,12 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: linear-gradient(to right, #695552 0%, gray 2%, gray 98%, #5C4C4A 100%);
+    /*background-color: #404040;*/
+    background-color: #1E1E1E;
 
 }
 p, h1 {
-    color: lightgray;
+    color: whitesmoke;
 }
 a {
     color: inherit;
@@ -170,6 +171,7 @@ nav ul li a:hover::after {
     max-height: 30rem;
     padding-top: 1%;
     margin: 0, auto;
+    margin-top: 2%;
 }
 
 .slider {
@@ -216,6 +218,8 @@ nav ul li a:hover::after {
 
 .special-events {
     display: none;
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 .special-events.show {
@@ -231,6 +235,8 @@ h1 {
 }
 
 .reservation {
+    margin-top: 5%;
+    margin-bottom: 5%;
     display: block;
 }
 
