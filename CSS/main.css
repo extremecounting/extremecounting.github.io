@@ -28,13 +28,27 @@ a:visited {
 }
 
 .navbar-container {
-    position: relative;
-    z-index: 9999;
-    display: flex;
+    background:#1E1E1E;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navdiv{
+    display:flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
 }
+li{
+    list-style: none;
+    display: inline-block;
+}
+li a{
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+
+}
+
 nav {
     height: inherit !important;
     width: 100%;
