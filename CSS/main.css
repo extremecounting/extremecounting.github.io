@@ -226,6 +226,15 @@ nav ul li a:hover::after {
     display: block;
 }
 
+.super-bowl {
+    display: flex;
+}
+
+.super-bowl img {
+    margin: 1%;
+    border-radius: 4%;
+}
+
 h1 {
     font-size: 2.4vw;
 }
