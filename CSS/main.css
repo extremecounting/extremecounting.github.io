@@ -316,7 +316,7 @@ h1 {
     font-size: 1.1vw;
 }
 .slide{
-    height: auto;
+    height: 50%;
     width: 180px;
     position: absolute;
     background-color:#8B8B8B;
