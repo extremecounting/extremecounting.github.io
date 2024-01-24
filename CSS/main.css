@@ -149,7 +149,7 @@ nav ul li a:hover::after {
 .logo-image {
     position: relative; 
     margin-left: 30px;
-    margin-top: 150px;
+    margin-top: 100px;
 
     transform: translateY(-40%);
     height: 14vh;
@@ -373,7 +373,7 @@ input{
     position: absolute;
     height: 2px;
     width: 20px;
-    background-color: #C50101;
+    background-color:#000000;
     border-radius: 50px;
     transition: 0.3s ease;
 
