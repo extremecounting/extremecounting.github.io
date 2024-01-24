@@ -1,0 +1,125 @@
+
+li{
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.logo-image {
+    position: relative; 
+    margin-left: 5%;
+    margin-top: 100px;
+
+    transform: translateY(-40%);
+    height: auto;
+    width: 85%;
+}
+ul li{
+    list-style: none;
+
+}
+ul li a{
+    color:#FFA500;
+    font-weight: 500;
+    padding: 5% 0;
+    display:block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+
+}
+
+ul li:hover a{
+    color: #fff;
+    background-color:#585858;
+}
+input{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+.toggle{
+    position: absolute;
+    height: 30px;
+    width:30px;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color:#8B8B8B;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+}
+.toggle .common{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color:#000000;
+    border-radius: 50px;
+    transition: 0.3s ease;
+
+}
+.toggle .top_line{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.toggle .middle_line{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.toggle .bottom_line{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+input:checked ~ .toggle .top_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+input:checked ~ .toggle .bottom_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+input:checked ~ .toggle .middle_line{
+    opacity: 0;
+    transform: translateX(20px);
+}
+input:checked ~ .slide{
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+.slide .logos{
+    left: 20px;
+    top: auto;
+    padding-left: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.slide{
+    height: 50%;
+    width: 10%;
+    font-size: 1.3vw;
+    position: absolute;
+    background-color:#8B8B8B;
+    transition: .5s ease;
+    transform: translateX(-180px);
+}
