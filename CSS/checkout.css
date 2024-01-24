@@ -183,13 +183,13 @@ nav ul li a:hover::after {
     margin-right: 2%;
 }
 input[type="text"] {
-    height: 35px;
+    height: 2.5vw;
     font-size: 18px;
 }
 
 .information input[name="email"], input[name="credit-card"] {
     margin-top: 1%;
-    width: 458px;
+    width: 30vw;
 }
 
 .payment-info {
@@ -209,16 +209,22 @@ input[type="text"] {
     float: left;
     margin-top: 1%;
     margin-left: 2%;
-    height: 40px;
-    width: 100px;
+    height: 20px;
+    width: 8vw;
 }
 
 .credit-card-info input[name="cvc"] {
     font-size: 20px;
     margin-top: 1%;
     margin-left: 1%;
-    width: 142px;
+    width: 10vw;
     height: 36px;
+}
+
+.information input[name="couponCode"] {
+    width: 30vw;
+    margin: 1%;
+    margin-bottom: 3%;
 }
 
 .divider {

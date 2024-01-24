@@ -14,7 +14,7 @@ if (checkoutButton) {
         //select all text boxes
         let textBoxes = document.querySelectorAll('input[type="text"]');
         textBoxes.forEach(textBox => {
-            if(textBox.value.trim() === "") {
+            if(textBox.value.trim() === "" && textBox.id != "coupon") {
                 anyEmpty = true;
             } else {
             }
