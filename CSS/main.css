@@ -251,11 +251,6 @@ h1 {
     margin-bottom: 5%;
     display: block;
 }
-<<<<<<< Updated upstream
-    
-=======
-
->>>>>>> Stashed changes
 .reservation {
     padding-bottom: 2%;
 }
@@ -327,15 +322,8 @@ h1 {
     transition: .5s ease;
     transform: translateX(-180px);
 }
-h1{
-    color: #C50101;
-    font-weight: 800;
-    text-align: right;
-    padding: 10px 0;
-    padding-right: 30px;
-    pointer-events: none;
 
-}
+
 ul li{
     list-style: none;
 
@@ -353,7 +341,7 @@ ul li a{
 
 ul li:hover a{
     color: #fff;
-    background-color: #1E1E1E;
+    background-color:#C50101;
 }
 input{
     display: none;
@@ -369,7 +357,7 @@ input{
     z-index: 1;
     cursor: pointer;
     border-radius: 2px;
-    background-color: #ffffff;
+    background-color:#8B8B8B;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 
 }
