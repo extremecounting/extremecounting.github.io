@@ -152,8 +152,8 @@ nav ul li a:hover::after {
     margin-top: 100px;
 
     transform: translateY(-40%);
-    height: 14vh;
-    width: 7vw;
+    height: 7%;
+    width: auto;
 }
 .main-image {
     margin-top: 2%;
@@ -317,7 +317,7 @@ h1 {
 }
 .slide{
     height: 50%;
-    width: 180px;
+    width: 10%;
     position: absolute;
     background-color:#8B8B8B;
     transition: .5s ease;
