@@ -1,4 +1,3 @@
-var specialEventTranslation = 0;
 
 window.onload = function() {
   // Select all anchor tags inside the element with class 'slider-nav'
@@ -20,3 +19,11 @@ window.onload = function() {
   );
 
 };
+
+window.addEventListener('scroll', function() {
+  var superBowlImages = document.querySelectorAll('.super-bowl img');
+  var scrollPercentage = window.pageYOffset / (document.body.scrollHeight - window.innerHeight);
+  superBowlImages.forEach(function(img) {
+      img.style.transform = 'translateY(' + (-10 + scrollPercentage * 20) + 'px)';
+  });
+});
