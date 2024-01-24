@@ -22,7 +22,7 @@ window.onload = function() {
 
 window.addEventListener('scroll', function() {
   var superBowlImages = document.querySelectorAll('.super-bowl img');
-  var scrollPercentage = window.pageYOffset / (document.body.scrollHeight - window.innerHeight);
+  var scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
   superBowlImages.forEach(function(img) {
       img.style.transform = 'translateY(' + (-10 + scrollPercentage * 200) + 'px)';
   });
