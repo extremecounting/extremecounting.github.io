@@ -86,6 +86,7 @@ p, h1 {
     font-size: 1.3vw;
 }
 .super-bowl {
+    overflow: hidden;
     align-items: center;
     width: 100%;
     display: flex;
