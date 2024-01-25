@@ -124,7 +124,7 @@ p, h1 {
     height: 20vw;
     padding: 1%;
     padding-top: 0;
-    background-color: black;
+    background-color: rgb(44, 44, 44);
 }
 .footer h1 {
     font-size: 1.3vw;
