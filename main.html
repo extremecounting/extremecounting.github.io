@@ -9,7 +9,7 @@
   </head>
   <body>
     <label>
-        <input type="checkbox">
+        <input type="checkbox" class = "hiddenInput">
         <div class="toggle">
           <span class="top_line common"></span>
           <span class="middle_line common"></span>
@@ -53,6 +53,7 @@
       </div>
       <!--<img class="main-image" src="images/fire.jpg" alt="OOPS" />
       -->
+      
       
       <div class="special-events" id = "specialEvents">
         <h1 class="special-event-title">Upcoming Special Events:</h1>
@@ -107,22 +108,24 @@
             <h1>Contact Us</h1>
             <p>
               If you have any questions, reach out to us at (906)-204-9970, or fill out this form
-            </p>it'
+            </p>
             <div class="form-container">
               <div class="form-fields">
+              
                 <form action="https://api.web3forms.com/submit" method="POST">
                   <input type="hidden" name="access_key" value="34fad137-0b4f-4411-a966-44b2c382e138">
-                  <input type="hidden" name="subject" value="Game Day Grill Feedback" />
-                  <div class="mb-6">
-                    <input type="text" name="name" id="name" placeholder="First and last name" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-400 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-500 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                  <div class="form-column">
+                    <div class="input-row">
+                        <input type="text" name="name" id="name" placeholder="First and last name" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-400 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-500 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                        <input type="email" name="email" id="email" placeholder="yourEmail@email.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-400 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-500 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                    </div>
+                    <div class="input-row">
+                        <textarea rows="5" name="message" id="message" placeholder="Your inquiry" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-400 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-500 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+                    </div>
+                        <div class="input-row">
+                      <button type="submit">Submit Form</button>
+                    </div>
                   </div>
-                  <div class="mb-6">
-                    <input type="email" name="email" id="email" placeholder="yourEmail@email.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-400 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-500 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
-                  </div>
-                  <div class="mb-6">
-                    <textarea rows="5" name="message" id="message" placeholder="Your inquiry" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-400 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-500 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
-                  </div>
-                  <button type="submit">Submit Form</button>
               </form>
               </div>
               

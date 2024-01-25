@@ -100,7 +100,7 @@ p, h1 {
 .super-bowl img {
     margin: 1%;
     border-radius: 4%;
-    width: 155vw !important;
+    width: 25vw;
     display: flex;
 }
 
@@ -121,7 +121,7 @@ p, h1 {
 }
 .footer {
     margin-top: 20%;;
-    height: 17vw;
+    height: 20vw;
     padding: 1%;
     padding-top: 0;
     background-color: black;
@@ -165,11 +165,32 @@ h1{
     pointer-events: none;
 }
 .form-fields {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content: space-between;
+    grid-template-columns: 1fr;
+}
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+.input-row {
+    margin-bottom: 1%;
+}
+.input-row textarea {
+    width: 20.75vw; /* Adjust this value to increase or decrease the width */
+}
+.input-row input {
+    width: 10vw;
+}
+.input-row button[type="submit"] {
+    margin-left: 22%;
+    width: 8vw;
+    height: 1.25vw;
+    transition: background-color 1s;
 }
 
-.mb-6 {
-    width: 100%;
+.input-row button[type="submit"]:hover {
+    background-color: #FFD1B4;
+    border-radius: 0.25vw;
 }
