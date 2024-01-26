@@ -3,7 +3,12 @@ html, body {
     padding: 0;
     height: 100%;
     /*background-color: #404040;*/
-    background-color: #1E1E1E;
+    background-color: black;
+    background-image: url("../images/Fire.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    
+    background-position: 22vw 0%;
 }
 p, h1 {
     color: whitesmoke;
@@ -16,6 +21,7 @@ p, h1 {
     background-position: center;
     margin-left: 10%;
     margin-right: 10%;
+    background-color: #1E1E1E;
 }
 .overlay-text {
     text-align: center;
@@ -85,7 +91,7 @@ p, h1 {
 .special-events p {
     font-size: 1.3vw;
 }
-.super-bowl {
+.super-bowl, .trivia-night {
     overflow: hidden;
     align-items: center;
     width: 100%;
@@ -93,17 +99,20 @@ p, h1 {
     line-height: 2;
     
 }
-.super-bowl h1 {
+.super-bowl h1, .trivia-night h1 {
     font-size: 2vw;
     text-align: center;
 }
-.super-bowl img {
+.super-bowl img, .trivia-night img {
     margin: 1%;
     border-radius: 4%;
     width: 25vw;
     display: flex;
 }
-
+.trivia-night {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
 .reservation {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -114,6 +123,7 @@ p, h1 {
 }
 .reservation p {
     font-size: 1.3vw;
+    line-height: 2;
 }
 .email {
     color: blue;
@@ -145,6 +155,10 @@ p, h1 {
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+.hours p {
+    line-height: 1.75; 
 }
 .divider {
     margin-top: 1%;

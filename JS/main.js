@@ -27,3 +27,11 @@ window.addEventListener('scroll', function() {
       img.style.transform = 'translateY(' + (-10 + scrollPercentage * 200) + 'px)';
   });
 });
+
+window.addEventListener('scroll', function() {
+  var triviaImages = document.querySelectorAll('.trivia-night img');
+  var scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+  triviaImages.forEach(function(img) {
+      img.style.transform = 'translateY(' + (-10 + scrollPercentage * 200) + 'px)';
+  });
+});
