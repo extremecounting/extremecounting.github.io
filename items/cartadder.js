@@ -614,13 +614,13 @@ if(clubSandElem) {
   });
 }
 
-var rubanSandElem = document.getElementById('add-rubansand');
-if(rubanSandElem) {
-  rubanSandElem.addEventListener('click', function() {
-    if (localStorage.getItem('ruban_sandwich') == null) {
-      localStorage.setItem('ruban_sandwich', 1);
+var rubenSandElem = document.getElementById('add-rubensand');
+if(rubenSandElem) {
+  rubenSandElem.addEventListener('click', function() {
+    if (localStorage.getItem('ruben_sandwich') == null) {
+      localStorage.setItem('ruben_sandwich', 1);
     } else {
-      localStorage.setItem('ruban_sandwich', +localStorage.getItem('ruban_sandwich') + 1);
+      localStorage.setItem('ruben_sandwich', +localStorage.getItem('ruben_sandwich') + 1);
     }
     var msg = document.createElement('div');
     msg.textContent = 'Item added to cart!';
@@ -663,7 +663,7 @@ if(pulledporkSandElem) {
 }
 
 //Drinks
-var beerElem = document.getElementById('add-beer');
+/* var beerElem = document.getElementById('add-beer');
 if(beerElem) {
   beerElem.addEventListener('click', function() {
     if (localStorage.getItem('beer') == null) {
@@ -685,7 +685,7 @@ if(beerElem) {
       msg.parentNode.removeChild(msg);
     }, 1250);
   });
-}
+} */
 
 var rootBeerElem = document.getElementById('add-rbeer');
 if(rootBeerElem) {
