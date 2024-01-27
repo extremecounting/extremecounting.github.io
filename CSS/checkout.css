@@ -42,7 +42,7 @@ body {
 }
 input[type="text"] {
     height: 2.5vw;
-    font-size: 18px;
+    font-size: 1.08vw;
 }
 
 .information input[name="email"], input[name="credit-card"] {
@@ -63,20 +63,20 @@ input[type="text"] {
     margin-right: 2%;
 }
 .month-dropdown, .year-dropdown {
-    font-size: 16px;
+    font-size: 0.96vw;
     float: left;
     margin-top: 1%;
     margin-left: 2%;
-    height: 20px;
+    height: 1.2vw;
     width: 8vw;
 }
 
 .credit-card-info input[name="cvc"] {
-    font-size: 20px;
+    font-size: 1.2vw;
     margin-top: 1%;
     margin-left: 1%;
     width: 10vw;
-    height: 36px;
+    height: 2.16vw;
 }
 
 .information input[name="couponCode"] {
@@ -86,9 +86,9 @@ input[type="text"] {
 }
 
 .divider {
-    width: 4px;
+    width: 0.24vw;
     background-color: gray;
-    height: 60px;
+    height: 3.6vw;
     margin: 1%;
     margin-left: 3%;
     margin-right: 3%;
@@ -103,23 +103,23 @@ input[type="text"] {
 }
 
 .confirmation button {
-    height: 60px;
-    width: 220px;
-    border-radius: 30px;
+    height: 3.6vw;
+    width: 13.2vw;
+    border-radius: 1.8vw;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 0.96vw;
     transition-duration: 0.4s;
 }
 
 .confirmation button:hover {
     background-color: white;
     color: black;
-    border: 2px solid #4CAF50;
+    border: 0.12vw solid #4CAF50;
 }
 .total {
     position: absolute;

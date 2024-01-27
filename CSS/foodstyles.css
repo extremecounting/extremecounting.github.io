@@ -28,7 +28,7 @@ p, h1, h2, h3 {
 .menu-heading {
     margin: 0;
     padding-bottom: 0.75em;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 0.12 solid #ccc;
 }
 
 .menu-group {

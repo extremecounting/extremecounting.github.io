@@ -29,8 +29,8 @@ p, h1, h2, h3 {
     align-items: center;
     background-color: white;
     transition: background-color 650ms;
-    border-radius: 15px;
-    font-size: 24px;
+    border-radius: 0.9vw;
+    font-size: 1.44vw;
     background-color: #1E1E1E;
 }
 
@@ -95,7 +95,7 @@ p, h1, h2, h3 {
     position: absolute;
     top: 10%;
     right: 3%;
-    gap: 10px;
+    gap: 0.6vw;
 }
 .options .add-order {
     background-color: #4CAF50; 
@@ -106,7 +106,7 @@ p, h1, h2, h3 {
     text-align: center; 
     text-decoration: none; 
     display: inline-block;
-    font-size: 16px;
+    font-size: 0.96vw;
     transition: background-color 0.3s ease; 
     cursor: pointer; 
 }

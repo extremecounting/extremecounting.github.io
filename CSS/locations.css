@@ -22,7 +22,7 @@ html, body {
     padding: 1%;
     background-color: #444444;
     margin-top: 2%;
-    border-radius: 15px;
+    border-radius: 0.9vw;
 }
 
 .information p {

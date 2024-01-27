@@ -2,13 +2,13 @@
 li{
     list-style: none;
     display: inline-block;
-    font-size: 18px;
+    font-size: 1.3vw;
 }
 
 .logo-image {
     position: relative; 
     margin-left: 5%;
-    margin-top: 100px;
+    margin-top: 6vw;
 
     transform: translateY(-40%);
     height: auto;
@@ -40,23 +40,23 @@ ul li:hover a{
 }
 .toggle{
     position: absolute;
-    height: 30px;
-    width:30px;
-    top: 20px;
-    left: 20px;
+    height: 1.8vw;
+    width: 1.8vw;
+    top: 1.2vw;
+    left: 1.2vw;
     z-index: 1;
     cursor: pointer;
-    border-radius: 2px;
+    border-radius: 0.12vw;
     background-color:#8B8B8B;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 0.6vw rgba(0,0,0,0.3);
 
 }
 .toggle .common{
     position: absolute;
-    height: 2px;
-    width: 20px;
+    height: 0.12vw;
+    width: 1.2vw;
     background-color:#000000;
-    border-radius: 50px;
+    border-radius: 8.33vw;
     transition: 0.3s ease;
 
 }
@@ -79,29 +79,29 @@ ul li:hover a{
 
 }
 input:checked ~ .toggle .top_line{
-    left: 2px;
-    top: 14px;
-    width: 25px;
+    left: 0.12vw;
+    top: 0.84vw;
+    width: 1.5vw;
     transform: rotate(45deg);
 }
 input:checked ~ .toggle .bottom_line{
-    left: 2px;
-    top: 14px;
-    width: 25px;
+    left: 0.12vw;
+    top: 0.84vw;
+    width: 1.5vw;
     transform: rotate(-45deg);
 }
 input:checked ~ .toggle .middle_line{
     opacity: 0;
-    transform: translateX(20px);
+    transform: translateX(1.2vw);
 }
 input:checked ~ .slide{
     transform: translateX(0);
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    box-shadow: 0 0 0.9vw rgba(0,0,0,0.5);
 }
 .slide .logos{
-    left: 20px;
+    left: 1.2vw;
     top: auto;
-    padding-left: 20px;
+    padding-left: 1.2vw;
 }
 
 a {
@@ -114,11 +114,11 @@ a:visited {
 }
 
 .slide{
-    height: 50%;
+    height: 25vw;
     width: 10%;
     font-size: 1.3vw;
     position: absolute;
     background-color:#8B8B8B;
     transition: .5s ease;
-    transform: translateX(-180px);
+    transform: translateX(-10.8vw);
 }
