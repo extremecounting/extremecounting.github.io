@@ -1,16 +1,23 @@
+
+body {
+    background-color: black;
+    background-image: url("../images/Fire.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
 .container {
     max-width: 1200px;
     padding: 1.5em;
-    position: relative;
-    background-size: cover;
-    background-position: center;
     margin-left: 10%;
     margin-right: 10%;
+}
+p, h1, h2 {
+    color: whitesmoke;
 }
 .menu {
     margin-top: 1em;
     font-family: 'Bitter', serif;
-    font-size: 14px;
+    font-size: 2vw;
 }
 
 .menu-heading {
@@ -31,14 +38,15 @@
     margin-top: 2%;
     margin-bottom: 2%;
     display: flex;
-    background-color: white;
+    background-color: #1E1E1E;
     transition: background-color 650ms;
-    border-radius: 15px;
-    font-size: 24px;
+    border-radius: 1vw;
+    font-size: 1.75vw;
+    color: whitesmoke;
 }
 
 .menu-item:hover {
-    background-color: #ededed;
+    background-color: black;
 }
 
 
@@ -49,7 +57,7 @@
     height: inherit;
     flex-shrink: 0;
     object-fit: cover;
-    margin-right: 1.5em;
+    margin-right: 0;
 }
 
 .menu-item-text {
@@ -68,19 +76,13 @@
 
 @media screen and (min-width: 900px) { 
     .menu { 
-        font-size: 16px;
+        font-size: 1.3vw;
     }
     .menu-group {
         grid-template-columns: repeat(2, 1fr);
     }
     .menu-item-image {
-        width: 125px;
-        height: 125px;
+        width: 9.25vw;
+        height: 9.25vw;
     }
-}
-
-#header {
-    width: 100%;
-    height: 100vh;
-    background-color: #636363;
 }

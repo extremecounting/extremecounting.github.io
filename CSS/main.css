@@ -121,6 +121,9 @@ p, h1 {
 .reservation {
     padding-bottom: 2%;
 }
+.reservation h1 {
+    text-align: center;
+}
 .reservation p {
     font-size: 1.3vw;
     line-height: 2;
@@ -131,7 +134,7 @@ p, h1 {
 }
 .footer {
     margin-top: 20%;;
-    height: 20vw;
+    height: 22vw;
     padding: 1%;
     padding-top: 0;
     background-color: rgb(44, 44, 44);
