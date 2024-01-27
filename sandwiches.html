@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="CSS/sandwiches.css" />
+    <link rel="stylesheet" href="CSS/navbar.css" />
+    <link rel="stylesheet" href="CSS/foodstyles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,59 +14,64 @@
       rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <!--Nav Bar-->
-      <div class="navbar-container">
-        <nav>
-          <ul>
-            <a href="main.html">
-              <img class="logo-image" src="images/Logo.png" alt="LOGO HERE" />
-            </a>
-            <li>
-              <span><a href="menu.html">Menu</a></span>
-            </li>
-            <li>
-              <span><a href="locations.html">Locations</a></span>
-            </li>
-            <li>
-              <span><a href="cart.html">Order</a></span>
-            </li>
-          </ul>
-        </nav>
+    <label>
+      <input type="checkbox" class="hiddenInput" checked />
+      <div class="toggle">
+        <span class="top_line common"></span>
+        <span class="middle_line common"></span>
+        <span class="bottom_line common"></span>
       </div>
-      <div class="sandwiches">
-        <h2 class="sandwiches-heading">Sandwiches</h2>
-        <div class="sandwiches-group">
+
+      <div class="slide">
+        <a href="main.html">
+          <img class="logo-image" src="images/Logo.png" alt="LOGO HERE" />
+        </a>
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <br />
+          <li><a href="locations.html">Locations</a></li>
+          <br />
+          <li><a href="cart.html">Your Order</a></li>
+          <br />
+        </ul>
+      </div>
+    </label>
+    <div class="container">
+      <div class="menu">
+        <a href="menu.html">
+          <h2 class="menu-heading">Sandwiches</h2>
+        </a>
+        <div class="menu-group">
           <a href="items/ClubSandwich.html">
-            <div class="sandwiches-item">
+            <div class="menu-item">
               <img
-                class="sandwiches-item-image"
+                class="menu-item-image"
                 src="images/ClubSandwich.png"
                 alt="OOPS" />
-              <div class="sandwiches-item-text">
-                <h3 class="sandwiches-item-heading">Club <br />Sandwich</h3>
+              <div class="menu-item-text">
+                <h3 class="menu-item-heading">Club <br />Sandwich</h3>
               </div>
             </div>
             <a href="items/PulledPorkSandwich.html">
-            <div class="sandwiches-item">
-              <img
-                class="sandwiches-item-image"
-                src="images/PulledPorkSandwich.png"
-                alt="OOPS" />
-              <div class="sandwiches-item-text">
-                <h3 class="sandwiches-item-heading">Pulled Pork Sandwich</h3>
+              <div class="menu-item">
+                <img
+                  class="menu-item-image"
+                  src="images/PulledPorkSandwich.png"
+                  alt="OOPS" />
+                <div class="menu-item-text">
+                  <h3 class="menu-item-heading">Pulled Pork Sandwich</h3>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
           </a>
           <a href="items/RubenSandwich.html">
-            <div class="sandwiches-item">
+            <div class="menu-item">
               <img
-                class="sandwiches-item-image"
+                class="menu-item-image"
                 src="images/RubenSandwich.png"
                 alt="OOPS" />
-              <div class="sandwiches-item-text">
-                <h3 class="sandwiches-item-heading">Ruben Sandwhich</h3>
+              <div class="menu-item-text">
+                <h3 class="menu-item-heading">Ruben Sandwhich</h3>
               </div>
             </div>
           </a>

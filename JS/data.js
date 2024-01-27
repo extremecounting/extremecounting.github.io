@@ -117,7 +117,7 @@ const itemDatabase = [
     name:"Mac & Cheese",
     price: 6.99,
     description: "Classic elbow macaroni mixed with a creamy cheese sauce.",
-    imgPath: "images/MachChease.png"},
+    imgPath: "images/MachCheese.png"},
 
     //Salads
     {id:"caesar_salad",
@@ -167,7 +167,7 @@ const itemDatabase = [
     {id:"strawberry_lemonade",
     name:"Strawberry Lemonade",
     price: 1.99,
-    description: "lotum 5",
+    description: "Lorem ipsum dolor sit amet.",
     imgPath: "images/StrawberryLemonade.png"},
     {id:"lemonade",
     name:"Lemonade",
