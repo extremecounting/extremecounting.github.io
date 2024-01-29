@@ -663,30 +663,6 @@ if(pulledporkSandElem) {
 }
 
 //Drinks
-/* var beerElem = document.getElementById('add-beer');
-if(beerElem) {
-  beerElem.addEventListener('click', function() {
-    if (localStorage.getItem('beer') == null) {
-      localStorage.setItem('beer', 1);
-    } else {
-      localStorage.setItem('beer', +localStorage.getItem('beer') + 1);
-    }
-    var msg = document.createElement('div');
-    msg.textContent = 'Item added to cart!';
-    msg.style.position = 'fixed';
-    msg.style.bottom = '10px';
-    msg.style.right = '10px';
-    msg.style.padding = '10px';
-    msg.style.color = 'white';
-    msg.style.background = '#4CAF50';
-    msg.style.borderRadius = '5px';
-    document.body.appendChild(msg);
-    setTimeout(function() {
-      msg.parentNode.removeChild(msg);
-    }, 1250);
-  });
-} */
-
 var rootBeerElem = document.getElementById('add-rbeer');
 if(rootBeerElem) {
   rootBeerElem.addEventListener('click', function() {

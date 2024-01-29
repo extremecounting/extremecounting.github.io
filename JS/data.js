@@ -100,7 +100,7 @@ const itemDatabase = [
     name:"Mozzarella Sticks",
     price: 5.99,
     description: "Creamy mozzarella coated in a crisp batter and deep-fried to perfection. Served with tangy marinara sauce for dipping.",
-    imgPath: "images/mozzarellasticks.jpg"},
+    imgPath: "images/MozzarellaSticks.png"},
 
     //Kids
     {id:"sliders",
@@ -154,11 +154,6 @@ const itemDatabase = [
     imgPath: "images/PulledPorkSandwich.png"},
 
     //Drinks
-    {id:"beer",
-    name:"beer",
-    price: 0.49,
-    description: "lotum 5",
-    imgPath: "images/Beer.png"},
     {id:"root_beer",
     name:"Root Beer",
     price: 1.99,
