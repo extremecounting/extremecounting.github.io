@@ -105,11 +105,11 @@ input:checked ~ .slide{
 }
 
 a {
-    color: black;
+    color: #222222;
     text-decoration: none;
 }
 a:visited {
-    color: black;
+    color: #222222;
     text-decoration: none;
 }
 
