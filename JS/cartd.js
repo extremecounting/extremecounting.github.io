@@ -19,11 +19,17 @@ function startup() {
                 <div class="cart-item">
                     <img class="cart-item-image" src="${item.imgPath}" alt="OOPS">
                     <div class="cart-item-text">
-                        <div class="cart-item-heading">
-                            <div class="cart-item-title">
-                                <h3>${item.name}<br>$${(item.price*+localStorage.getItem(key)).toFixed(2)} </h3>
+                        <div class = "cart-item-words">
+                            <div class="cart-item-heading">
+                                <div class="cart-item-title">
+                                    <h3>${item.name}<br>$${(item.price*+localStorage.getItem(key)).toFixed(2)} </h3>
+                                </div>
                             </div>
+                            <p class="cart-item-description">
+                                ${item.description}
+                            </p>
                         </div>
+                        <div class = "cart-item-buttons">
                         <div class="options">
                             <button class="add-order" id="add_${item.id}">Add item</button>
                             <button class="remove-order" id="remove_${item.id}">Remove item</button>
@@ -31,10 +37,10 @@ function startup() {
                         <div class="amount">
                             <h3>(${localStorage.getItem(key)})</h3>
                         </div>
+                        </div>
+                        
 
-                        <p class="cart-item-description">
-                            ${item.description}
-                        </p>
+                        
                     </div>
                 </div>`;
             }}

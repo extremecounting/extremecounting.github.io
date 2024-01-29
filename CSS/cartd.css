@@ -52,10 +52,15 @@ p, h1, h2, h3 {
 
 .cart-item-text {
     flex-grow: 1;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.cart-item-words {
+    width: 75%;
+}
+.cart-item-buttons {
+    width: 25%;
 }
 
 .cart-item-heading {
@@ -69,12 +74,6 @@ p, h1, h2, h3 {
 
 .cart-item-name {
     margin-right: 1em;
-}
-
-#header {
-    width: 100%;
-    height: 100vh;
-    background-color: #636363;
 }
 .cart-item {
     position: relative;
