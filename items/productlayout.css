@@ -3,14 +3,20 @@ html, body {
     padding: 0;
     height: 100%;
     /*background-color: #404040;*/
-    background-color: rgb(44, 44, 44);
+    background-color: black;
+    background-image: url("../images/Fire.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
     
+    background-position: 22vw 0%;
 }
 .container {
+    background-color: #444444;
     max-width: 1200px;
     padding: 1.5em;
     margin-left: 10%;
     margin-right: 10%;
+    border-radius: 0 0 0.9vw 0.9vw;
 }
 
 section.image {
@@ -58,9 +64,9 @@ section.image {
 }
 
 .description h3 {
-    color: #8E3C00;
+    color: #9E3C00;
     text-decoration: underline;
-    font-size: 1.08vw;
+    font-size: 1.5vw;
 } 
 
 .product-info {
@@ -91,3 +97,6 @@ section.image {
     border-radius: 0.3vw;
 }
 
+.container p2 {
+    color: #222222;
+}
