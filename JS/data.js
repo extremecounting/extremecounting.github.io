@@ -85,12 +85,24 @@ const itemDatabase = [
     description: "description",
     imgPath: "images/VarietyWings.png"},
 
+
     //Meats
+    {id:"steak",
+    name:"Steak",
+    price: 10.99,
+    description: "description",
+    imgPath: "images/Steak.png"},
+    {id:"chicken",
+    name:"Grilled Chicken",
+    price: 10.99,
+    description: "description",
+    imgPath: "images/Chicken.png"},
     {id:"salmon",
     name:"Salmon",
     price: 10.99,
     description: "description",
     imgPath: "images/Salmon.png"},
+
 
     //Sides and Appetizers
     {id:"onion_rings",
@@ -114,6 +126,7 @@ const itemDatabase = [
     description: "Creamy mozzarella coated in a crisp batter and deep-fried to perfection. Served with tangy marinara sauce for dipping.",
     imgPath: "images/MozzarellaSticks.png"},
 
+
     //Kids
     {id:"sliders",
     name:"Sliders",
@@ -131,6 +144,7 @@ const itemDatabase = [
     description: "Classic elbow macaroni mixed with a creamy cheese sauce.",
     imgPath: "images/MachCheese.png"},
 
+
     //Salads
     {id:"caesar_salad",
     name:"Caesar Salad",
@@ -147,6 +161,7 @@ const itemDatabase = [
     price: 7.99,
     description: "description",
     imgPath: "images/BalsamicSalad.png"},
+
 
     //Sandwiches
     {id:"club_sandwich",
@@ -174,6 +189,7 @@ const itemDatabase = [
     price: 5.99,
     description: "description",
     imgPath: "images/BLT.png"},
+
 
     //Drinks
     {id:"root_beer",
