@@ -79,6 +79,18 @@ const itemDatabase = [
     price: 9.99,
     description: "Lotum 5",
     imgPath: "images/PlainWings.png"},
+    {id:"sample_wings",
+    name:"Sample Wings Platter",
+    price: 12.99,
+    description: "Lotum 5",
+    imgPath: "images/VarietyWings.png"},
+
+    //Meats
+    {id:"salmon",
+    name:"Salmon",
+    price: 10.99,
+    description: "Lotum 5",
+    imgPath: "images/Salmon.png"},
 
     //Sides and Appetizers
     {id:"onion_rings",
@@ -152,6 +164,16 @@ const itemDatabase = [
     price: 5.99,
     description: "lotum 5",
     imgPath: "images/PulledPorkSandwich.png"},
+    {id:"cuban_sandwich",
+    name:"Cuban Sandwich",
+    price: 5.99,
+    description: "lotum 5",
+    imgPath: "images/CubanSandwich.png"},
+    {id:"blt",
+    name:"BLT",
+    price: 5.99,
+    description: "lotum 5",
+    imgPath: "images/BLT.png"},
 
     //Drinks
     {id:"root_beer",
