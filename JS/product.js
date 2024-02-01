@@ -9,6 +9,10 @@ window.onload = function() {
         h2Tags[0].innerHTML = newText; // Set the new text
     }
     p1tags[0].innerHTML = item.description;
-    amountTag[0].innerHTML = ` (${localStorage.getItem(item.id)}) `;
-    
+    var itemAmount = localStorage.getItem(item.id);
+    if(itemAmount !== null) { // Check if the item amount is not null
+        amountTag[0].innerHTML = ` (${itemAmount}) `;
+    } else {
+        amountTag[0].innerHTML = ''; // Don't display anything if item amount is null
+    }
 };
