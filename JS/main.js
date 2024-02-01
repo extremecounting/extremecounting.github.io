@@ -24,7 +24,7 @@ window.addEventListener('scroll', function() {
   var superBowlImages = document.querySelectorAll('.super-bowl img');
   var scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
   superBowlImages.forEach(function(img) {
-      img.style.transform = 'translateY(' + (-10 + scrollPercentage * 200) + 'px)';
+      img.style.transform = 'translateY(' + (-10 + scrollPercentage * 100) + 'px)';
   });
 });
 
@@ -32,6 +32,6 @@ window.addEventListener('scroll', function() {
   var triviaImages = document.querySelectorAll('.trivia-night img');
   var scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
   triviaImages.forEach(function(img) {
-      img.style.transform = 'translateY(' + (-10 + scrollPercentage * 200) + 'px)';
+      img.style.transform = 'translateY(' + (-10 + scrollPercentage * 100) + 'px)';
   });
 });

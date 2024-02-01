@@ -36,7 +36,7 @@ const itemDatabase = [
     {id: "ms_burger",
     name: "Mushroom Swiss Burger",
     price: 9.99,
-    description: "Savor the sizzle of bacon atop our classic burger—a perfect harmony of juicy beef, melted cheese, and crispy, smoky bacon on a toasted bun.",
+    description: "Savor the sizzle of bacon and sautéd mushrooms atop our classic burger—a perfect harmony of juicy beef, melted swiss cheese on a toasted bun.",
     imgPath: "images/MushroomSwissBurger.png"},
 
 
@@ -59,7 +59,7 @@ const itemDatabase = [
     {id:"cs_combo",
     name: "Chicken Strips Combo",
     price: 11.99,
-    description: "Lotum 5",
+    description: "Juicy chicken tenders, deep fried to perfect crispiness alongside our fries with a side of coleslaw",
     imgPath: "images/ChickenStripsCombo.png"},
 
 
@@ -77,8 +77,32 @@ const itemDatabase = [
     {id:"plain_wings",
     name:"Plain Wings",
     price: 9.99,
-    description: "Lotum 5",
+    description: "description",
     imgPath: "images/PlainWings.png"},
+    {id:"sample_wings",
+    name:"Sample Wings Platter",
+    price: 12.99,
+    description: "description",
+    imgPath: "images/VarietyWings.png"},
+
+
+    //Meats
+    {id:"steak",
+    name:"Steak",
+    price: 10.99,
+    description: "description",
+    imgPath: "images/Steak.png"},
+    {id:"chicken",
+    name:"Grilled Chicken",
+    price: 10.99,
+    description: "description",
+    imgPath: "images/Chicken.png"},
+    {id:"salmon",
+    name:"Salmon",
+    price: 10.99,
+    description: "description",
+    imgPath: "images/Salmon.png"},
+
 
     //Sides and Appetizers
     {id:"onion_rings",
@@ -94,13 +118,14 @@ const itemDatabase = [
     {id:"chille_fries",
     name: "Chille Fries",
     price: 4.99,
-    description: "lotum 5",
+    description: "description",
     imgPath: "images/ChilleFries.png"},
     {id:"mozzarella_sticks",
     name:"Mozzarella Sticks",
     price: 5.99,
     description: "Creamy mozzarella coated in a crisp batter and deep-fried to perfection. Served with tangy marinara sauce for dipping.",
-    imgPath: "images/mozzarellasticks.jpg"},
+    imgPath: "images/MozzarellaSticks.png"},
+
 
     //Kids
     {id:"sliders",
@@ -111,13 +136,14 @@ const itemDatabase = [
     {id:"chicken_nuggets",
     name:"Chicken Nuggets Combo Platter",
     price: 6.99,
-    description: "lotum 5",
+    description: "description",
     imgPath: "images/ChickenNuggetsKids.png"},
     {id:"mac_cheese",
     name:"Mac & Cheese",
     price: 6.99,
     description: "Classic elbow macaroni mixed with a creamy cheese sauce.",
     imgPath: "images/MachCheese.png"},
+
 
     //Salads
     {id:"caesar_salad",
@@ -133,8 +159,9 @@ const itemDatabase = [
     {id:"balsamic_salad",
     name:"Balsamic Salad",
     price: 7.99,
-    description: "lotum 5",
+    description: "description",
     imgPath: "images/BalsamicSalad.png"},
+
 
     //Sandwiches
     {id:"club_sandwich",
@@ -145,33 +172,34 @@ const itemDatabase = [
     {id:"ruben_sandwich",
     name:"Ruben Sandwich",
     price: 5.99,
-    description: "lotum 5",
+    description: "description",
     imgPath: "images/RubenSandwich.png"},
     {id:"pp_sandwich",
     name:"Pulled Pork Sandwich",
     price: 5.99,
-    description: "lotum 5",
+    description: "description",
     imgPath: "images/PulledPorkSandwich.png"},
+    {id:"cuban_sandwich",
+    name:"Cuban Sandwich",
+    price: 5.99,
+    description: "description",
+    imgPath: "images/CubanSandwich.png"},
+    {id:"blt",
+    name:"BLT",
+    price: 5.99,
+    description: "description",
+    imgPath: "images/BLT.png"},
+
 
     //Drinks
-    {id:"beer",
-    name:"beer",
-    price: 0.49,
-    description: "lotum 5",
-    imgPath: "images/Beer.png"},
     {id:"root_beer",
     name:"Root Beer",
     price: 1.99,
-    description: "lotum 5",
+    description: "description",
     imgPath: "images/RootBeer.png"},
     {id:"strawberry_lemonade",
     name:"Strawberry Lemonade",
     price: 1.99,
-    description: "Lorem ipsum dolor sit amet.",
+    description: "description",
     imgPath: "images/StrawberryLemonade.png"},
-    {id:"lemonade",
-    name:"Lemonade",
-    price: 1.99,
-    description: "This is a description",
-    imgPath: "images/lemonade.jpg"},
 ];

@@ -105,11 +105,12 @@ input:checked ~ .slide{
 }
 
 a {
-    color: inherit;
+    display: inline-block;
+    color: #222222;
     text-decoration: none;
 }
 a:visited {
-    color: inherit;
+    color: #222222;
     text-decoration: none;
 }
 

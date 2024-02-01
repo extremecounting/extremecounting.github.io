@@ -16,6 +16,13 @@ html, body {
     margin-left: 10%;
     margin-right: 10%;
 }
+
+h1 {
+    font-family: 'Bitter', serif;
+    font-size: 2.3vw;
+    color: whitesmoke;
+}
+
 .locations {
     display: flex;
     justify-content: space-between;
@@ -26,18 +33,15 @@ html, body {
 }
 
 .information p {
+    color: #8B8B8B;
     font-size: 1.3vw;
     line-height: 2; 
-}
-
-h1 {
-    font-family: 'Bitter', serif;
-    font-size: 2.3vw;
-    color: whitesmoke;
+    width: 90%;
+    margin-left: 3%;
 }
 
 #map {
-    width: 50%;
+    width: 200%;
     margin: 1%;
     border-radius: 3%;
 }

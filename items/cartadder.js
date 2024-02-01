@@ -342,6 +342,104 @@ if(plainWingsElem) {
   });
 }
 
+var sampleWingsElem = document.getElementById('add-samplewings');
+if(sampleWingsElem) {
+  sampleWingsElem.addEventListener('click', function() {
+    if (localStorage.getItem('sample_wings') == null) {
+      localStorage.setItem('sample_wings', 1);
+    } else {
+      localStorage.setItem('sample_wings', +localStorage.getItem('sample_wings') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
+
+//Meats
+var steakElem = document.getElementById('add-steak');
+if(steakElem) {
+  steakElem.addEventListener('click', function() {
+    if (localStorage.getItem('steak') == null) {
+      localStorage.setItem('steak', 1);
+    } else {
+      localStorage.setItem('steak', +localStorage.getItem('steak') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
+var chickenElem = document.getElementById('add-chicken');
+if(chickenElem) {
+  chickenElem.addEventListener('click', function() {
+    if (localStorage.getItem('chicken') == null) {
+      localStorage.setItem('chicken', 1);
+    } else {
+      localStorage.setItem('chicken', +localStorage.getItem('chicken') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
+var salmonElem = document.getElementById('add-salmon');
+if(salmonElem) {
+  salmonElem.addEventListener('click', function() {
+    if (localStorage.getItem('salmon') == null) {
+      localStorage.setItem('salmon', 1);
+    } else {
+      localStorage.setItem('salmon', +localStorage.getItem('salmon') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
 
 //Sides and Appetizersz
 var onionRingsElem = document.getElementById('add-onionrings');
@@ -614,6 +712,54 @@ if(clubSandElem) {
   });
 }
 
+var bltElem = document.getElementById('add-blt');
+if(bltElem) {
+  bltElem.addEventListener('click', function() {
+    if (localStorage.getItem('blt') == null) {
+      localStorage.setItem('blt', 1);
+    } else {
+      localStorage.setItem('blt', +localStorage.getItem('blt') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
+var cubanSandElem = document.getElementById('add-cubansand');
+if(cubanSandElem) {
+  cubanSandElem.addEventListener('click', function() {
+    if (localStorage.getItem('cuban_sandwich') == null) {
+      localStorage.setItem('cuban_sandwich', 1);
+    } else {
+      localStorage.setItem('cuban_sandwich', +localStorage.getItem('cuban_sandwich') + 1);
+    }
+    var msg = document.createElement('div');
+    msg.textContent = 'Item added to cart!';
+    msg.style.position = 'fixed';
+    msg.style.bottom = '10px';
+    msg.style.right = '10px';
+    msg.style.padding = '10px';
+    msg.style.color = 'white';
+    msg.style.background = '#4CAF50';
+    msg.style.borderRadius = '5px';
+    document.body.appendChild(msg);
+    setTimeout(function() {
+      msg.parentNode.removeChild(msg);
+    }, 1250);
+  });
+}
+
 var rubenSandElem = document.getElementById('add-rubensand');
 if(rubenSandElem) {
   rubenSandElem.addEventListener('click', function() {
@@ -663,30 +809,6 @@ if(pulledporkSandElem) {
 }
 
 //Drinks
-/* var beerElem = document.getElementById('add-beer');
-if(beerElem) {
-  beerElem.addEventListener('click', function() {
-    if (localStorage.getItem('beer') == null) {
-      localStorage.setItem('beer', 1);
-    } else {
-      localStorage.setItem('beer', +localStorage.getItem('beer') + 1);
-    }
-    var msg = document.createElement('div');
-    msg.textContent = 'Item added to cart!';
-    msg.style.position = 'fixed';
-    msg.style.bottom = '10px';
-    msg.style.right = '10px';
-    msg.style.padding = '10px';
-    msg.style.color = 'white';
-    msg.style.background = '#4CAF50';
-    msg.style.borderRadius = '5px';
-    document.body.appendChild(msg);
-    setTimeout(function() {
-      msg.parentNode.removeChild(msg);
-    }, 1250);
-  });
-} */
-
 var rootBeerElem = document.getElementById('add-rbeer');
 if(rootBeerElem) {
   rootBeerElem.addEventListener('click', function() {
