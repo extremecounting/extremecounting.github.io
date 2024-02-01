@@ -1,9 +1,19 @@
+// Add an event listener to the document body
+document.body.addEventListener('click', function(event) {
+  // Check if the clicked element is a button
+  if (event.target.tagName === 'BUTTON') {
+    // Execute your action here
+    location.reload();
+  }
+});
+
+
 //Desserts
 var applePieElem = document.getElementById('add-applepie');
 if(applePieElem) {
   applePieElem.addEventListener('click', function() {
     if (localStorage.getItem('apple_pie') == null) {
-      localStorage.setItem('apple_pie`', 1);
+      localStorage.setItem('apple_pie', 1);
     } else {
       localStorage.setItem('apple_pie', +localStorage.getItem('apple_pie') + 1);
     }

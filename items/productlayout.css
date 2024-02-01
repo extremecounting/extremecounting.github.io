@@ -90,13 +90,19 @@ section.image {
     justify-content: center;
     margin: 2%;
     margin-right: 8%;
+    align-items: center;
 }
 
 .options button { 
     height: 2.1vw;
     border-radius: 0.3vw;
+    margin-right: 4%;
 }
 
 .container p2 {
     color: #222222;
+}
+
+p {
+    font-size: 1.5vw;
 }
