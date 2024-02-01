@@ -70,7 +70,7 @@ const itemDatabase = [
     description: "Lotum 5",
     imgPath:"images/GourmetWings.png"},
     {id:"bbq_wings",
-    name:"Plain Wings",
+    name:"BBQ Wings",
     price: 10.99,
     description: "Crispy chicken wings with no sauce, cooked to perfection",
     imgPath: "images/bbqWings.png"},
